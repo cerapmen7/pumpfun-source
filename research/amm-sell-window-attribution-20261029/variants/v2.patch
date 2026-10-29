@@ -1,0 +1,11 @@
+--- a/programs/pump-amm/src/instructions/swap/sell.rs
++++ b/programs/pump-amm/src/instructions/swap/sell.rs
+@@ -477,7 +477,7 @@
+                 token_program: quote_token_program.to_account_info(),
+             },
+         ))?;
+-    }
++    } else {}
+     let ata = InterfaceAccount::<TokenAccount>::try_from_unchecked(ata)?;
+     crate::utils::token::transfer_from_pool(
+         quote_token_program,

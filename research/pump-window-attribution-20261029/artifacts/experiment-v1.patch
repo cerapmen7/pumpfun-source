@@ -1,0 +1,7 @@
+--- pristine
++++ v1
+@@ -109,3 +109,3 @@
+ // layout-pad
+- require_gt!(quote,0,PumpError::BuySlippageBelowMinTokensOut);
++ if quote==0{return Err(PumpError::BuySlippageBelowMinTokensOut.into());}
+  let amount=u64::try_from(crate::constant_product::tokens_for_quote(bonding_curve,quote)?).map_err(|_|PumpError::Truncation)?;

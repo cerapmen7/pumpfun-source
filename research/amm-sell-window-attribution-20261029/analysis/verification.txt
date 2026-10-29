@@ -1,0 +1,63 @@
+== 1. provided baseline (repo metric, build-a/symbols.so)
+{
+ "total": 785,
+ "matched": 784,
+ "raw": 784,
+ "unmatched": [
+  [
+   313168,
+   9024
+  ]
+ ]
+}
+
+== 2. hashes of the provided baseline
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/pumpfun-source-maintained/research/amm-layout-closure-20261028/results/build-a/candidate.so
+7271aaf8afe13b6c8f13a6cf0e9534896a66650dda13a2aa1b32e41edd46426d  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/pumpfun-source-maintained/research/amm-layout-closure-20261028/results/build-a/symbols.so
+
+== 3. my native build (base and cold)
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-base/candidate.so
+7271aaf8afe13b6c8f13a6cf0e9534896a66650dda13a2aa1b32e41edd46426d  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-base/symbols.so
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-cold/candidate.so
+7271aaf8afe13b6c8f13a6cf0e9534896a66650dda13a2aa1b32e41edd46426d  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-cold/symbols.so
+
+== 4. base measurement
+{'total': 785, 'matched': 784, 'raw': 784, 'unmatched': [[313168, 9024]]}
+
+== 5. window gap (deployed vs base)
+{
+ "start": "0x4c750",
+ "size": 9024,
+ "normalized_diff_bytes": 2925,
+ "normalized_diff_runs": 793,
+ "raw_equal": false,
+ "reloc_rows_original": 47,
+ "reloc_rows_candidate": 47,
+ "reloc_rows_equal": false,
+ "reloc_only_original": [
+  [
+   3584,
+
+== 6. instruction multiset
+insns 1075 1075
+only in A:
+    1  jeqr r2, r3, <OFF>
+only in B:
+    1  jner r2, r3, <OFF>
+multiset equal: False
+
+== 7. relocation rows
+paired rows: 47
+drift min -0x478 max 0xe0
+rows with zero drift: 26
+distinct drifts: [-1144, -832, -88, -8, 0, 8, 224]
+
+== 8. byte-identity of the 8 layout variants
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v1/candidate.so
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v2/candidate.so
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v4/candidate.so
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v5/candidate.so
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v7/candidate.so
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v8/candidate.so
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v9/candidate.so
+86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v10/candidate.so

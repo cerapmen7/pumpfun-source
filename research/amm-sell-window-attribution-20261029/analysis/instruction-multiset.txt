@@ -1,0 +1,6 @@
+insns 1075 1075
+only in A:
+    1  jeqr r2, r3, <OFF>
+only in B:
+    1  jner r2, r3, <OFF>
+multiset equal: False

@@ -1,0 +1,46 @@
+--- a/programs/pump-amm/src/instructions/swap/sell.rs
++++ b/programs/pump-amm/src/instructions/swap/sell.rs
+@@ -465,18 +465,21 @@
+ 
+ 
+     require!(ata.is_writable, PumpAmmError::InvalidCashbackAccumulatorAta);
+-    if ata.data_is_empty() {
+-        anchor_spl::associated_token::create(CpiContext::new(
+-            associated_token_program.to_account_info(),
+-            anchor_spl::associated_token::Create {
+-                payer: user.to_account_info(),
+-                associated_token: ata.clone(),
+-                authority: accumulator.to_account_info(),
+-                mint: quote_mint.to_account_info(),
+-                system_program: system_program.to_account_info(),
+-                token_program: quote_token_program.to_account_info(),
+-            },
+-        ))?;
++    match ata.data_is_empty() {
++        false => {}
++        true => {
++            anchor_spl::associated_token::create(CpiContext::new(
++                associated_token_program.to_account_info(),
++                anchor_spl::associated_token::Create {
++                    payer: user.to_account_info(),
++                    associated_token: ata.clone(),
++                    authority: accumulator.to_account_info(),
++                    mint: quote_mint.to_account_info(),
++                    system_program: system_program.to_account_info(),
++                    token_program: quote_token_program.to_account_info(),
++                },
++            ))?;
++        }
+     }
+     let ata = InterfaceAccount::<TokenAccount>::try_from_unchecked(ata)?;
+     crate::utils::token::transfer_from_pool(
+@@ -490,9 +493,6 @@
+ 
+ 
+ 
+-
+-
+-
+ 
+ 
+     accumulator.user = user.key();

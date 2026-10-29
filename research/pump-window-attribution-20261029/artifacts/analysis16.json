@@ -1,0 +1,1395 @@
+[
+ {
+  "target": "0x1e7c0",
+  "candidate": "0x2c330",
+  "symbol": "_ZN14pump_recovered9create_v27execute17h3f7d08900031c023E",
+  "deployed_bytes": 15576,
+  "candidate_bytes": 14848,
+  "delta": -728,
+  "tuples_equal": true,
+  "deployed_tuple_count": 17,
+  "candidate_tuple_count": 17,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 898,
+  "skeleton_total": 1947,
+  "skeleton_regions": 90,
+  "first_regions": [
+   {
+    "tag": "insert",
+    "d_start": 104,
+    "d_end": 104,
+    "c_start": 104,
+    "c_end": 105,
+    "anchor": [
+     "programs/pump/src/create_v2.rs",
+     716,
+     6082
+    ]
+   },
+   {
+    "tag": "delete",
+    "d_start": 105,
+    "d_end": 106,
+    "c_start": 106,
+    "c_end": 106,
+    "anchor": [
+     "programs/pump/src/create_v2.rs",
+     716,
+     6082
+    ]
+   },
+   {
+    "tag": "delete",
+    "d_start": 131,
+    "d_end": 139,
+    "c_start": 131,
+    "c_end": 131,
+    "anchor": [
+     "programs/pump/src/create_v2.rs",
+     716,
+     6082
+    ]
+   },
+   {
+    "tag": "replace",
+    "d_start": 140,
+    "d_end": 179,
+    "c_start": 132,
+    "c_end": 138,
+    "anchor": [
+     "programs/pump/src/create_v2.rs",
+     716,
+     6082
+    ]
+   },
+   {
+    "tag": "replace",
+    "d_start": 180,
+    "d_end": 267,
+    "c_start": 139,
+    "c_end": 140,
+    "anchor": [
+     "programs/pump/src/create_v2.rs",
+     774,
+     6077
+    ]
+   },
+   {
+    "tag": "delete",
+    "d_start": 344,
+    "d_end": 680,
+    "c_start": 217,
+    "c_end": 217,
+    "anchor": [
+     "programs/pump/src/create_v2.rs",
+     738,
+     6046
+    ]
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "PumpError$u20$as$u20$core",
+   "PumpError$u20$as$u20$core",
+   "PumpError$u20$as$u20$core",
+   "PumpError$u20$as$u20$core",
+   "PumpError$u20$as$u20$core",
+   "_ZN11anchor_lang5error5Error11with_values17h17a91ba7c0882e46E",
+   "_ZN11anchor_lang5error5Error11with_values17h17a91ba7c0882e46E",
+   "_ZN11anchor_lang5error5Error11with_values17h17a91ba7c0882e46E",
+   "_ZN4core3ptr74drop_in_place$LT$$u5b$solana_account_info..AccountInfo$u3b$$u20$6$u5d$$GT$17he3c1ee89ec1c3077E",
+   "_ZN4core3ptr74drop_in_place$LT$$u5b$solana_account_info..AccountInfo$u3b$$u20$6$u5d$$GT$17he3c1ee89ec1c3077E"
+  ],
+  "call_only_candidate": [
+   "AccountInfo$u3b$$u20$6$u5d$$GT$17he3c1ee89ec1c3077E",
+   "AccountInfo$u3b$$u20$6$u5d$$GT$17he3c1ee89ec1c3077E",
+   "_ZN11anchor_lang5error5Error11with_values17ha6df42326d4a37a2E",
+   "_ZN11anchor_lang5error5Error11with_values17ha6df42326d4a37a2E",
+   "_ZN11anchor_lang5error5Error11with_values17ha6df42326d4a37a2E",
+   "memcpy",
+   "string",
+   "string",
+   "string",
+   "string",
+   "string"
+  ]
+ },
+ {
+  "target": "0x22a10",
+  "candidate": "0x2fd30",
+  "symbol": "_ZN14pump_recovered9admin_cto7execute17h3bd6d7f34f2e30d7E",
+  "deployed_bytes": 27400,
+  "candidate_bytes": 19904,
+  "delta": -7496,
+  "tuples_equal": false,
+  "deployed_tuple_count": 16,
+  "candidate_tuple_count": 16,
+  "tuple_diff_deployed_only": [
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    2006,
+    null
+   ]
+  ],
+  "tuple_diff_candidate_only": [
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    648,
+    null
+   ]
+  ],
+  "skeleton_equal": 594,
+  "skeleton_total": 3425,
+  "skeleton_regions": 72,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 0,
+    "d_end": 1,
+    "c_start": 0,
+    "c_end": 89,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 2,
+    "d_end": 3,
+    "c_start": 90,
+    "c_end": 99,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 4,
+    "d_end": 7,
+    "c_start": 100,
+    "c_end": 101,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 40,
+    "d_end": 54,
+    "c_start": 134,
+    "c_end": 136,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 55,
+    "d_end": 99,
+    "c_start": 137,
+    "c_end": 139,
+    "anchor": null
+   },
+   {
+    "tag": "delete",
+    "d_start": 101,
+    "d_end": 197,
+    "c_start": 141,
+    "c_end": 141,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "PumpError$u20$as$u20$core",
+   "PumpError$u20$as$u20$core",
+   "PumpError$u20$as$u20$core",
+   "_ZN10anchor_spl16associated_token17create_idempotent17h6d66b04320e05cf1E",
+   "_ZN14pump_recovered10collect_v221transfer_vault_tokens17h2ece254518fc977aE",
+   "error"
+  ],
+  "call_only_candidate": [
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "_ZN14pump_recovered9admin_cto9pay_token17hc90f03acc87f1e99E",
+   "_ZN19solana_account_info11AccountInfo13data_is_empty17h4cbad3bc61143bcfE",
+   "_ZN19solana_account_info11AccountInfo13data_is_empty17h4cbad3bc61143bcfE",
+   "memcmp",
+   "memcpy",
+   "string",
+   "string",
+   "string",
+   "string"
+  ]
+ },
+ {
+  "target": "0x4c158",
+  "candidate": "0x5f438",
+  "symbol": "_ZN14pump_recovered10migrate_v223create_token_account_v217hebc7d3eb865ec10dE",
+  "deployed_bytes": 8368,
+  "candidate_bytes": 8424,
+  "delta": 56,
+  "tuples_equal": true,
+  "deployed_tuple_count": 0,
+  "candidate_tuple_count": 0,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 764,
+  "skeleton_total": 1046,
+  "skeleton_regions": 67,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 0,
+    "d_end": 2,
+    "c_start": 0,
+    "c_end": 3,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 7,
+    "d_end": 8,
+    "c_start": 8,
+    "c_end": 9,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 13,
+    "d_end": 16,
+    "c_start": 14,
+    "c_end": 17,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 23,
+    "d_end": 24,
+    "c_start": 24,
+    "c_end": 27,
+    "anchor": null
+   },
+   {
+    "tag": "insert",
+    "d_start": 26,
+    "d_end": 26,
+    "c_start": 29,
+    "c_end": 30,
+    "anchor": null
+   },
+   {
+    "tag": "insert",
+    "d_start": 27,
+    "d_end": 27,
+    "c_start": 31,
+    "c_end": 38,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "_ZN4core3ptr74drop_in_place$LT$$u5b$solana_account_info..AccountInfo$u3b$$u20$6$u5d$$GT$17he3c1ee89ec1c3077E",
+   "_ZN4core3ptr74drop_in_place$LT$$u5b$solana_account_info..AccountInfo$u3b$$u20$6$u5d$$GT$17he3c1ee89ec1c3077E",
+   "_ZN4core3ptr74drop_in_place$LT$$u5b$solana_account_info..AccountInfo$u3b$$u20$7$u5d$$GT$17h3c7eb2ea127c0ac9E"
+  ],
+  "call_only_candidate": [
+   "AccountInfo$u3b$$u20$6$u5d$$GT$17he3c1ee89ec1c3077E",
+   "AccountInfo$u3b$$u20$6$u5d$$GT$17he3c1ee89ec1c3077E",
+   "AccountInfo$u3b$$u20$7$u5d$$GT$17h3c7eb2ea127c0ac9E"
+  ]
+ },
+ {
+  "target": "0x5b3b0",
+  "candidate": "0x67970",
+  "symbol": "_ZN14pump_recovered15multi_hop_curve8swap_hop17hf9fc08eed996a324E",
+  "deployed_bytes": 18584,
+  "candidate_bytes": 18536,
+  "delta": -48,
+  "tuples_equal": false,
+  "deployed_tuple_count": 5,
+  "candidate_tuple_count": 6,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    581,
+    6024
+   ]
+  ],
+  "skeleton_equal": 846,
+  "skeleton_total": 2323,
+  "skeleton_regions": 138,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 1,
+    "d_end": 3,
+    "c_start": 1,
+    "c_end": 3,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 4,
+    "d_end": 5,
+    "c_start": 4,
+    "c_end": 5,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 12,
+    "d_end": 13,
+    "c_start": 12,
+    "c_end": 14,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 33,
+    "d_end": 36,
+    "c_start": 34,
+    "c_end": 39,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 42,
+    "d_end": 43,
+    "c_start": 45,
+    "c_end": 46,
+    "anchor": null
+   },
+   {
+    "tag": "delete",
+    "d_start": 79,
+    "d_end": 82,
+    "c_start": 82,
+    "c_end": 82,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "TradeEvent$u20$as$u20$anchor_lang",
+   "TradeEvent$u20$as$u20$anchor_lang",
+   "_ZN14pump_recovered16constant_product16tokens_for_quote17h4006f7aa0ff394deE",
+   "_ZN14pump_recovered18buy_fee_market_cap17h0b0637c19adda7b8E",
+   "_ZN14pump_recovered5trade14quote_payments15transfer_native17h1ed3ead4aacd419aE",
+   "_ZN14pump_recovered5trade23post_complete_buy_event17hc535310fe355d60eE",
+   "_ZN14pump_recovered5trade4sub317he4ce99f8f0beb513E",
+   "_ZN14pump_recovered5trade4sub317he4ce99f8f0beb513E",
+   "_ZN14pump_recovered7migrate15native_payments15transfer_native17h5d1e5be1d70ba3a3E",
+   "_ZN14solana_program3log12sol_log_data17h1e024b73f122854fE",
+   "_ZN14solana_program3log12sol_log_data17h1e024b73f122854fE",
+   "_ZN14solana_program3log12sol_log_data17h1e024b73f122854fE",
+   "_ZN14solana_program7program13invoke_signed17h01c3b84bc1fc491eE",
+   "_ZN14solana_program7program13invoke_signed17h01c3b84bc1fc491eE",
+   "_ZN14solana_program7program13invoke_signed17h01c3b84bc1fc491eE",
+   "_ZN18solana_instruction11Instruction14new_with_bytes17h836fab8fb6401158E",
+   "_ZN18solana_instruction11Instruction14new_with_bytes17h836fab8fb6401158E",
+   "_ZN18solana_instruction11Instruction14new_with_bytes17h836fab8fb6401158E",
+   "_ZN5alloc5alloc15exchange_malloc17h6cd8dd11b0e3424eE",
+   "_ZN5alloc5alloc15exchange_malloc17h6cd8dd11b0e3424eE",
+   "_ZN5alloc5alloc15exchange_malloc17h6cd8dd11b0e3424eE",
+   "memcpy",
+   "memcpy",
+   "memcpy",
+   "memcpy",
+   "trade",
+   "trade",
+   "trade_types",
+   "trade_types",
+   "vec",
+   "vec",
+   "vec"
+  ],
+  "call_only_candidate": [
+   "AccountInfo$u20$as$u20$core",
+   "Sysvar$u20$for$u20$solana_clock",
+   "Sysvar$u20$for$u20$solana_clock",
+   "_ZN14pump_recovered15multi_hop_curve11route_event17h4d05a793506cababE",
+   "_ZN14pump_recovered15multi_hop_curve11route_event17h832c24f9f9169d39E",
+   "_ZN14pump_recovered15multi_hop_curve11route_event17hb8e539730ac1c3b6E",
+   "_ZN14pump_recovered15multi_hop_curve13move_lamports17hb45ac72518619178E",
+   "_ZN14pump_recovered15multi_hop_curve3add17hd369eef948d0e063E",
+   "_ZN14pump_recovered15multi_hop_curve3add17hd369eef948d0e063E",
+   "_ZN14pump_recovered15multi_hop_curve3div17hce05a53ba4689e14E",
+   "_ZN14pump_recovered15multi_hop_curve3div17hce05a53ba4689e14E",
+   "_ZN14pump_recovered15multi_hop_curve3sub17h15caf80321d7d79fE",
+   "_ZN14pump_recovered15multi_hop_curve3sub17h15caf80321d7d79fE",
+   "_ZN14pump_recovered15multi_hop_curve3sub17h15caf80321d7d79fE",
+   "_ZN14pump_recovered15multi_hop_curve3sub17h15caf80321d7d79fE",
+   "_ZN14pump_recovered15multi_hop_curve3sub17h15caf80321d7d79fE",
+   "_ZN14pump_recovered19user_quote_payments15transfer_native17h249d6b9d6a3ea452E",
+   "_ZN14pump_recovered9PumpError4name17h61022c7ff53288d0E",
+   "_ZN19solana_account_info11AccountInfo8data_len17hc7887ca2703f481dE",
+   "_ZN19solana_account_info11AccountInfo8data_len17hc7887ca2703f481dE",
+   "__multi3",
+   "__multi3",
+   "string"
+  ]
+ },
+ {
+  "target": "0x6cd78",
+  "candidate": "0x81800",
+  "symbol": "_ZN14pump_recovered11legacy_sell22process_cashback_inner17ha295bca94238997cE",
+  "deployed_bytes": 8544,
+  "candidate_bytes": 8816,
+  "delta": 272,
+  "tuples_equal": true,
+  "deployed_tuple_count": 6,
+  "candidate_tuple_count": 6,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 921,
+  "skeleton_total": 1068,
+  "skeleton_regions": 63,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 0,
+    "d_end": 1,
+    "c_start": 0,
+    "c_end": 1,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 47,
+    "d_end": 55,
+    "c_start": 47,
+    "c_end": 55,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 69,
+    "d_end": 70,
+    "c_start": 69,
+    "c_end": 70,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 81,
+    "d_end": 84,
+    "c_start": 81,
+    "c_end": 84,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 85,
+    "d_end": 86,
+    "c_start": 85,
+    "c_end": 86,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 87,
+    "d_end": 88,
+    "c_start": 87,
+    "c_end": 88,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "_ZN11anchor_lang8accounts7account16Account$LT$T$GT$18try_from_unchecked17h6e0560255f193ea1E",
+   "rust_begin_unwind",
+   "rust_begin_unwind",
+   "string"
+  ],
+  "call_only_candidate": [
+   "PumpError$u20$as$u20$core",
+   "_ZN11anchor_lang8accounts7account16Account$LT$T$GT$8try_from17h506d6043f73ff98eE",
+   "_ZN4core5slice5index24slice_end_index_len_fail17h3f8438963677f5b8E",
+   "_ZN4core5slice5index24slice_end_index_len_fail17h3f8438963677f5b8E"
+  ]
+ },
+ {
+  "target": "0x72810",
+  "candidate": "0x8d838",
+  "symbol": "_ZN14pump_recovered5sweep7execute17h63039d4d7bb21efdE",
+  "deployed_bytes": 7832,
+  "candidate_bytes": 8784,
+  "delta": 952,
+  "tuples_equal": true,
+  "deployed_tuple_count": 2,
+  "candidate_tuple_count": 2,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 554,
+  "skeleton_total": 979,
+  "skeleton_regions": 70,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 0,
+    "d_end": 1,
+    "c_start": 0,
+    "c_end": 1,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 5,
+    "d_end": 7,
+    "c_start": 5,
+    "c_end": 7,
+    "anchor": null
+   },
+   {
+    "tag": "insert",
+    "d_start": 9,
+    "d_end": 9,
+    "c_start": 9,
+    "c_end": 10,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 13,
+    "d_end": 14,
+    "c_start": 14,
+    "c_end": 67,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 34,
+    "d_end": 36,
+    "c_start": 87,
+    "c_end": 89,
+    "anchor": null
+   },
+   {
+    "tag": "insert",
+    "d_start": 42,
+    "d_end": 42,
+    "c_start": 95,
+    "c_end": 96,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "Sysvar$u20$for$u20$solana_rent",
+   "_ZN11solana_rent4Rent15minimum_balance17h06f7367e702730e1E",
+   "_ZN14pump_recovered10legacy_buy15native_payments8transfer17hbadd94ada7bf8f96E",
+   "_ZN14pump_recovered5trade14quote_payments17transfer_to_owned17h94731864222abe09E",
+   "memcmp"
+  ],
+  "call_only_candidate": [
+   "_ZN11anchor_lang8Lamports12add_lamports17h5102c3c4b1fc3f5aE",
+   "_ZN14pump_recovered10legacy_buy15native_payments18ensure_rent_exempt17h2694562167e4cc15E",
+   "_ZN14pump_recovered7sell_v221quote_token_transfers21transfer_quote_tokens17h8f470f65dac6af06E",
+   "_ZN19solana_account_info11AccountInfo23try_borrow_mut_lamports17hc75a8bf8e315e81bE",
+   "error"
+  ]
+ },
+ {
+  "target": "0x77940",
+  "candidate": "0x92d20",
+  "symbol": "_ZN14pump_recovered16token_incentives22claim_token_incentives8cashback8claim_v217hd7264e3aea9beec9E",
+  "deployed_bytes": 8832,
+  "candidate_bytes": 8464,
+  "delta": -368,
+  "tuples_equal": true,
+  "deployed_tuple_count": 4,
+  "candidate_tuple_count": 4,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 598,
+  "skeleton_total": 1104,
+  "skeleton_regions": 90,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 0,
+    "d_end": 3,
+    "c_start": 0,
+    "c_end": 3,
+    "anchor": null
+   },
+   {
+    "tag": "insert",
+    "d_start": 7,
+    "d_end": 7,
+    "c_start": 7,
+    "c_end": 8,
+    "anchor": null
+   },
+   {
+    "tag": "delete",
+    "d_start": 8,
+    "d_end": 11,
+    "c_start": 9,
+    "c_end": 9,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 13,
+    "d_end": 15,
+    "c_start": 11,
+    "c_end": 13,
+    "anchor": null
+   },
+   {
+    "tag": "delete",
+    "d_start": 34,
+    "d_end": 35,
+    "c_start": 32,
+    "c_end": 32,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 36,
+    "d_end": 38,
+    "c_start": 33,
+    "c_end": 35,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "AccountInfo$u20$as$u20$core",
+   "AccountInfo$u20$as$u20$core",
+   "_ZN19solana_account_info11AccountInfo13data_is_empty17h4cbad3bc61143bcfE",
+   "_ZN19solana_account_info11AccountInfo23try_borrow_mut_lamports17hc75a8bf8e315e81bE",
+   "_ZN19solana_account_info11AccountInfo8lamports17h0ca2b04e77f2c7d8E",
+   "error",
+   "error",
+   "string",
+   "token_incentives",
+   "token_incentives"
+  ],
+  "call_only_candidate": [
+   "PumpError$u20$as$u20$core",
+   "_ZN11anchor_lang8Lamports12add_lamports17h72a0806f26081e1eE",
+   "pump_amm",
+   "pump_amm"
+  ]
+ },
+ {
+  "target": "0x80df8",
+  "candidate": "0x997f0",
+  "symbol": "_ZN14pump_recovered5trade12v3_buy_costs17h7b9c6f53e4a86951E",
+  "deployed_bytes": 2120,
+  "candidate_bytes": 2056,
+  "delta": -64,
+  "tuples_equal": true,
+  "deployed_tuple_count": 2,
+  "candidate_tuple_count": 2,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 205,
+  "skeleton_total": 265,
+  "skeleton_regions": 28,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 1,
+    "d_end": 2,
+    "c_start": 1,
+    "c_end": 2,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 3,
+    "d_end": 4,
+    "c_start": 3,
+    "c_end": 4,
+    "anchor": null
+   },
+   {
+    "tag": "insert",
+    "d_start": 8,
+    "d_end": 8,
+    "c_start": 8,
+    "c_end": 10,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 11,
+    "d_end": 12,
+    "c_start": 13,
+    "c_end": 14,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 16,
+    "d_end": 17,
+    "c_start": 18,
+    "c_end": 19,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 18,
+    "d_end": 19,
+    "c_start": 20,
+    "c_end": 21,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": true,
+  "call_only_deployed": [],
+  "call_only_candidate": []
+ },
+ {
+  "target": "0x83c00",
+  "candidate": "0x9ecb8",
+  "symbol": "_ZN14pump_recovered5trade14v3_execute_buy17h66a4a2076c16dbefE",
+  "deployed_bytes": 3440,
+  "candidate_bytes": 3408,
+  "delta": -32,
+  "tuples_equal": true,
+  "deployed_tuple_count": 1,
+  "candidate_tuple_count": 1,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 352,
+  "skeleton_total": 430,
+  "skeleton_regions": 33,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 30,
+    "d_end": 33,
+    "c_start": 30,
+    "c_end": 43,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 34,
+    "d_end": 56,
+    "c_start": 44,
+    "c_end": 53,
+    "anchor": null
+   },
+   {
+    "tag": "delete",
+    "d_start": 75,
+    "d_end": 76,
+    "c_start": 72,
+    "c_end": 72,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 80,
+    "d_end": 82,
+    "c_start": 76,
+    "c_end": 78,
+    "anchor": null
+   },
+   {
+    "tag": "insert",
+    "d_start": 84,
+    "d_end": 84,
+    "c_start": 80,
+    "c_end": 82,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 87,
+    "d_end": 91,
+    "c_start": 85,
+    "c_end": 87,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": true,
+  "call_only_deployed": [],
+  "call_only_candidate": []
+ },
+ {
+  "target": "0x13b9b8",
+  "candidate": "0x16e58",
+  "symbol": "_ZN14pump_recovered6buy_v211buy_handler17h33340742a10c508dE",
+  "deployed_bytes": 15480,
+  "candidate_bytes": 15424,
+  "delta": -56,
+  "tuples_equal": true,
+  "deployed_tuple_count": 5,
+  "candidate_tuple_count": 5,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 1236,
+  "skeleton_total": 1935,
+  "skeleton_regions": 168,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 0,
+    "d_end": 1,
+    "c_start": 0,
+    "c_end": 1,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 3,
+    "d_end": 5,
+    "c_start": 3,
+    "c_end": 5,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 7,
+    "d_end": 8,
+    "c_start": 7,
+    "c_end": 8,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 10,
+    "d_end": 11,
+    "c_start": 10,
+    "c_end": 11,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 132,
+    "d_end": 133,
+    "c_start": 132,
+    "c_end": 133,
+    "anchor": [
+     "programs/pump/src/buy_v2.rs",
+     345,
+     6005
+    ]
+   },
+   {
+    "tag": "replace",
+    "d_start": 135,
+    "d_end": 136,
+    "c_start": 135,
+    "c_end": 136,
+    "anchor": [
+     "programs/pump/src/buy_v2.rs",
+     345,
+     6005
+    ]
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "_ZN14pump_recovered19user_quote_payments18transfer_from_user17h3fac8df13b77df42E",
+   "_ZN14pump_recovered19user_quote_payments18transfer_from_user17h3fac8df13b77df42E"
+  ],
+  "call_only_candidate": [
+   "_ZN14pump_recovered19user_quote_payments28transfer_from_user_recipient17h7b05a2ae4ff9f5c6E",
+   "_ZN14pump_recovered19user_quote_payments28transfer_from_user_recipient17h7b05a2ae4ff9f5c6E"
+  ]
+ },
+ {
+  "target": "0x13f630",
+  "candidate": "0x1aea8",
+  "symbol": "_ZN14pump_recovered6buy_v226buy_exact_quote_in_handler17h569ead18f71b59a9E",
+  "deployed_bytes": 20184,
+  "candidate_bytes": 20096,
+  "delta": -88,
+  "tuples_equal": true,
+  "deployed_tuple_count": 11,
+  "candidate_tuple_count": 11,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 1782,
+  "skeleton_total": 2523,
+  "skeleton_regions": 231,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 3,
+    "d_end": 6,
+    "c_start": 3,
+    "c_end": 6,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 8,
+    "d_end": 9,
+    "c_start": 8,
+    "c_end": 9,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 11,
+    "d_end": 12,
+    "c_start": 11,
+    "c_end": 12,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 19,
+    "d_end": 20,
+    "c_start": 19,
+    "c_end": 20,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 23,
+    "d_end": 25,
+    "c_start": 23,
+    "c_end": 25,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 26,
+    "d_end": 28,
+    "c_start": 26,
+    "c_end": 28,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "_ZN14pump_recovered19user_quote_payments18transfer_from_user17h3fac8df13b77df42E",
+   "_ZN14pump_recovered19user_quote_payments18transfer_from_user17h3fac8df13b77df42E"
+  ],
+  "call_only_candidate": [
+   "_ZN14pump_recovered19user_quote_payments28transfer_from_user_recipient17h7b05a2ae4ff9f5c6E",
+   "_ZN14pump_recovered19user_quote_payments28transfer_from_user_recipient17h7b05a2ae4ff9f5c6E"
+  ]
+ },
+ {
+  "target": "0x144508",
+  "candidate": "0x85e98",
+  "symbol": "_ZN14pump_recovered7sell_v27execute17hdee0c05d3d287fefE",
+  "deployed_bytes": 13976,
+  "candidate_bytes": 14104,
+  "delta": 128,
+  "tuples_equal": true,
+  "deployed_tuple_count": 5,
+  "candidate_tuple_count": 5,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 1328,
+  "skeleton_total": 1747,
+  "skeleton_regions": 173,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 5,
+    "d_end": 8,
+    "c_start": 5,
+    "c_end": 8,
+    "anchor": null
+   },
+   {
+    "tag": "insert",
+    "d_start": 12,
+    "d_end": 12,
+    "c_start": 12,
+    "c_end": 16,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 14,
+    "d_end": 19,
+    "c_start": 18,
+    "c_end": 19,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 21,
+    "d_end": 23,
+    "c_start": 21,
+    "c_end": 23,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 88,
+    "d_end": 89,
+    "c_start": 88,
+    "c_end": 89,
+    "anchor": [
+     "programs/pump/src/sell_v2.rs",
+     243,
+     6005
+    ]
+   },
+   {
+    "tag": "replace",
+    "d_start": 91,
+    "d_end": 92,
+    "c_start": 91,
+    "c_end": 92,
+    "anchor": [
+     "programs/pump/src/sell_v2.rs",
+     243,
+     6005
+    ]
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "_ZN14pump_recovered5trade14quote_payments16transfer_to_user17h6ea1a9a2b025d65cE",
+   "_ZN14pump_recovered5trade14quote_payments16transfer_to_user17h6ea1a9a2b025d65cE"
+  ],
+  "call_only_candidate": [
+   "_ZN14pump_recovered5trade14quote_payments21transfer_to_recipient17h40a23dfee55a026dE",
+   "_ZN14pump_recovered5trade14quote_payments21transfer_to_recipient17h40a23dfee55a026dE"
+  ]
+ },
+ {
+  "target": "0x147ba0",
+  "candidate": "0x9fe18",
+  "symbol": "_ZN14pump_recovered5trade3buy17h040b74ddebd76776E",
+  "deployed_bytes": 3672,
+  "candidate_bytes": 3800,
+  "delta": 128,
+  "tuples_equal": true,
+  "deployed_tuple_count": 3,
+  "candidate_tuple_count": 3,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 354,
+  "skeleton_total": 459,
+  "skeleton_regions": 59,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 2,
+    "d_end": 3,
+    "c_start": 2,
+    "c_end": 3,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 5,
+    "d_end": 8,
+    "c_start": 5,
+    "c_end": 8,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 9,
+    "d_end": 10,
+    "c_start": 9,
+    "c_end": 10,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 16,
+    "d_end": 17,
+    "c_start": 16,
+    "c_end": 17,
+    "anchor": null
+   },
+   {
+    "tag": "insert",
+    "d_start": 22,
+    "d_end": 22,
+    "c_start": 22,
+    "c_end": 23,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 26,
+    "d_end": 39,
+    "c_start": 27,
+    "c_end": 29,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "_ZN14pump_recovered5trade17fit_post_complete17he20a5ed1ab52e76aE",
+   "_ZN14pump_recovered5trade20net_quote_for_budget17h66ab5c4bdfbf343aE"
+  ],
+  "call_only_candidate": [
+   "_ZN14pump_recovered5trade12v3_buy_costs17h7b9c6f53e4a86951E",
+   "_ZN14pump_recovered5trade14v3_execute_buy17h66a4a2076c16dbefE"
+  ]
+ },
+ {
+  "target": "0x1489f8",
+  "candidate": "0xa0ef8",
+  "symbol": "_ZN14pump_recovered5trade15buy_exact_quote17h729b305ff0379d4dE",
+  "deployed_bytes": 7856,
+  "candidate_bytes": 7800,
+  "delta": -56,
+  "tuples_equal": true,
+  "deployed_tuple_count": 8,
+  "candidate_tuple_count": 8,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 694,
+  "skeleton_total": 982,
+  "skeleton_regions": 80,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 0,
+    "d_end": 1,
+    "c_start": 0,
+    "c_end": 1,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 3,
+    "d_end": 4,
+    "c_start": 3,
+    "c_end": 4,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 5,
+    "d_end": 6,
+    "c_start": 5,
+    "c_end": 6,
+    "anchor": null
+   },
+   {
+    "tag": "delete",
+    "d_start": 7,
+    "d_end": 9,
+    "c_start": 7,
+    "c_end": 7,
+    "anchor": null
+   },
+   {
+    "tag": "insert",
+    "d_start": 13,
+    "d_end": 13,
+    "c_start": 11,
+    "c_end": 13,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 189,
+    "d_end": 192,
+    "c_start": 189,
+    "c_end": 191,
+    "anchor": [
+     "programs/pump/src/trade_v3.rs",
+     882,
+     6041
+    ]
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "_ZN14pump_recovered5trade17fit_post_complete17he20a5ed1ab52e76aE",
+   "_ZN14pump_recovered5trade20net_quote_for_budget17h66ab5c4bdfbf343aE",
+   "_ZN14pump_recovered5trade20net_quote_for_budget17h66ab5c4bdfbf343aE",
+   "_ZN14pump_recovered5trade20net_quote_for_budget17h66ab5c4bdfbf343aE"
+  ],
+  "call_only_candidate": [
+   "_ZN14pump_recovered5trade12v3_buy_costs17h7b9c6f53e4a86951E",
+   "_ZN14pump_recovered5trade12v3_buy_costs17h7b9c6f53e4a86951E",
+   "_ZN14pump_recovered5trade12v3_buy_costs17h7b9c6f53e4a86951E",
+   "_ZN14pump_recovered5trade14v3_execute_buy17h66a4a2076c16dbefE"
+  ]
+ },
+ {
+  "target": "0x14a8a8",
+  "candidate": "0xa3798",
+  "symbol": "_ZN14pump_recovered5trade4sell17h3feba226d1168c0aE",
+  "deployed_bytes": 6032,
+  "candidate_bytes": 6056,
+  "delta": 24,
+  "tuples_equal": true,
+  "deployed_tuple_count": 3,
+  "candidate_tuple_count": 3,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 552,
+  "skeleton_total": 754,
+  "skeleton_regions": 98,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 0,
+    "d_end": 1,
+    "c_start": 0,
+    "c_end": 1,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 4,
+    "d_end": 6,
+    "c_start": 4,
+    "c_end": 10,
+    "anchor": null
+   },
+   {
+    "tag": "delete",
+    "d_start": 8,
+    "d_end": 12,
+    "c_start": 12,
+    "c_end": 12,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 14,
+    "d_end": 17,
+    "c_start": 14,
+    "c_end": 17,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 23,
+    "d_end": 25,
+    "c_start": 23,
+    "c_end": 25,
+    "anchor": null
+   },
+   {
+    "tag": "replace",
+    "d_start": 26,
+    "d_end": 29,
+    "c_start": 26,
+    "c_end": 29,
+    "anchor": null
+   }
+  ],
+  "call_multiset_equal": true,
+  "call_only_deployed": [],
+  "call_only_candidate": []
+ },
+ {
+  "target": "0x14f4e0",
+  "candidate": "0x14e680",
+  "symbol": "_ZN14pump_recovered14pump_recovered16buy_exact_sol_in17h49bc4356a9e68eb0E",
+  "deployed_bytes": 13224,
+  "candidate_bytes": 13224,
+  "delta": 0,
+  "tuples_equal": true,
+  "deployed_tuple_count": 8,
+  "candidate_tuple_count": 8,
+  "tuple_diff_deployed_only": [],
+  "tuple_diff_candidate_only": [],
+  "skeleton_equal": 1627,
+  "skeleton_total": 1653,
+  "skeleton_regions": 8,
+  "first_regions": [
+   {
+    "tag": "replace",
+    "d_start": 357,
+    "d_end": 358,
+    "c_start": 357,
+    "c_end": 360,
+    "anchor": [
+     "programs/pump/src/buy.rs",
+     59,
+     6041
+    ]
+   },
+   {
+    "tag": "replace",
+    "d_start": 360,
+    "d_end": 361,
+    "c_start": 362,
+    "c_end": 363,
+    "anchor": [
+     "programs/pump/src/buy.rs",
+     59,
+     6041
+    ]
+   },
+   {
+    "tag": "insert",
+    "d_start": 362,
+    "d_end": 362,
+    "c_start": 364,
+    "c_end": 365,
+    "anchor": [
+     "programs/pump/src/buy.rs",
+     59,
+     6041
+    ]
+   },
+   {
+    "tag": "replace",
+    "d_start": 363,
+    "d_end": 364,
+    "c_start": 366,
+    "c_end": 369,
+    "anchor": [
+     "programs/pump/src/buy.rs",
+     59,
+     6041
+    ]
+   },
+   {
+    "tag": "replace",
+    "d_start": 399,
+    "d_end": 401,
+    "c_start": 404,
+    "c_end": 421,
+    "anchor": [
+     "programs/pump/src/buy.rs",
+     92,
+     6041
+    ]
+   },
+   {
+    "tag": "delete",
+    "d_start": 429,
+    "d_end": 449,
+    "c_start": 449,
+    "c_end": 449,
+    "anchor": [
+     "programs/pump/src/buy.rs",
+     110,
+     6042
+    ]
+   }
+  ],
+  "call_multiset_equal": false,
+  "call_only_deployed": [
+   "_ZN14pump_recovered19user_quote_payments21transfer_native_curve17h0795153ef115b1e2E",
+   "_ZN14pump_recovered19user_quote_payments21transfer_native_curve17h0795153ef115b1e2E"
+  ],
+  "call_only_candidate": [
+   "_ZN14pump_recovered19user_quote_payments25transfer_native_recipient17h39465594f2bf1f51E",
+   "_ZN14pump_recovered19user_quote_payments25transfer_native_recipient17h39465594f2bf1f51E"
+  ]
+ }
+]

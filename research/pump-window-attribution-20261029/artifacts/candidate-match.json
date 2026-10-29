@@ -1,0 +1,754 @@
+[
+ {
+  "target": "0x1e7c0",
+  "bytes": 15576,
+  "instructions": 1947,
+  "candidates": [
+   {
+    "address": "0x2c330",
+    "size": 14848,
+    "delta": -728,
+    "shape": 0.472,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered9create_v27execute17h3f7d08900031c023E"
+   },
+   {
+    "address": "0x2fd30",
+    "size": 19904,
+    "delta": 4328,
+    "shape": 0.21,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered9admin_cto7execute17h3bd6d7f34f2e30d7E"
+   },
+   {
+    "address": "0x14e680",
+    "size": 13224,
+    "delta": -2352,
+    "shape": 0.136,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered16buy_exact_sol_in17h49bc4356a9e68eb0E"
+   },
+   {
+    "address": "0x111a38",
+    "size": 13824,
+    "delta": -1752,
+    "shape": 0.169,
+    "diff_words": null,
+    "name": "_ZN113_$LT$pump_recovered..trade..SellV3$u20$as$u20$anchor_lang..Accounts$LT$pump_recovered..trade..SellV3Bumps$GT$$GT$12try_accounts17he4e7ded9e055501dE"
+   },
+   {
+    "address": "0x16e5b8",
+    "size": 14624,
+    "delta": -952,
+    "shape": 0.186,
+    "diff_words": null,
+    "name": "_ZN105_$LT$pump_recovered..LegacyBuy$u20$as$u20$anchor_lang..Accounts$LT$pump_recovered..LegacyBuyBumps$GT$$GT$12try_accounts17h5352aba07f7fa93dE"
+   }
+  ]
+ },
+ {
+  "target": "0x22a10",
+  "bytes": 27400,
+  "instructions": 3425,
+  "candidates": [
+   {
+    "address": "0x2fd30",
+    "size": 19904,
+    "delta": -7496,
+    "shape": 0.201,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered9admin_cto7execute17h3bd6d7f34f2e30d7E"
+   },
+   {
+    "address": "0x1aea8",
+    "size": 20096,
+    "delta": -7304,
+    "shape": 0.16,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6buy_v226buy_exact_quote_in_handler17h569ead18f71b59a9E"
+   },
+   {
+    "address": "0xdde28",
+    "size": 24312,
+    "delta": -3088,
+    "shape": 0.152,
+    "diff_words": null,
+    "name": "_ZN119_$LT$pump_recovered..migrate..Migrate$u20$as$u20$anchor_lang..Accounts$LT$pump_recovered..migrate..MigrateBumps$GT$$GT$12try_accounts17h57b9f1219e56d94bE"
+   },
+   {
+    "address": "0x2c330",
+    "size": 14848,
+    "delta": -12552,
+    "shape": 0.264,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered9create_v27execute17h3f7d08900031c023E"
+   },
+   {
+    "address": "0xb6218",
+    "size": 23360,
+    "delta": -4040,
+    "shape": 0.057,
+    "diff_words": null,
+    "name": "_ZN113_$LT$pump_recovered..buy_v2..BuyV2$u20$as$u20$anchor_lang..Accounts$LT$pump_recovered..buy_v2..BuyV2Bumps$GT$$GT$12try_accounts17h356571ffaeacfc6dE"
+   }
+  ]
+ },
+ {
+  "target": "0x4c158",
+  "bytes": 8368,
+  "instructions": 1046,
+  "candidates": [
+   {
+    "address": "0x5f438",
+    "size": 8424,
+    "delta": 56,
+    "shape": 0.728,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered10migrate_v223create_token_account_v217hebc7d3eb865ec10dE"
+   },
+   {
+    "address": "0x28798",
+    "size": 7256,
+    "delta": -1112,
+    "shape": 0.16,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered9create_v219initialize_metadata17hb2b6b65fb3fa3a6cE"
+   },
+   {
+    "address": "0x529b8",
+    "size": 7520,
+    "delta": -848,
+    "shape": 0.198,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered7migrate19init_pump_amm_boost17hd81604b8b18fe280E"
+   },
+   {
+    "address": "0xc5a30",
+    "size": 6464,
+    "delta": -1904,
+    "shape": 0.1,
+    "diff_words": null,
+    "name": "_ZN125_$LT$pump_recovered..create_v2..CreateV2$u20$as$u20$anchor_lang..Accounts$LT$pump_recovered..create_v2..CreateV2Bumps$GT$$GT$12try_accounts28_$u7b$$u7b$closure$u7d$$u7d$17h36b6359c0c7426ceE"
+   },
+   {
+    "address": "0x16ad70",
+    "size": 6464,
+    "delta": -1904,
+    "shape": 0.1,
+    "diff_words": null,
+    "name": "_ZN99_$LT$pump_recovered..Create$u20$as$u20$anchor_lang..Accounts$LT$pump_recovered..CreateBumps$GT$$GT$12try_accounts28_$u7b$$u7b$closure$u7d$$u7d$17h35b0c980a1cdeb21E"
+   }
+  ]
+ },
+ {
+  "target": "0x5b3b0",
+  "bytes": 18584,
+  "instructions": 2323,
+  "candidates": [
+   {
+    "address": "0x67970",
+    "size": 18536,
+    "delta": -48,
+    "shape": 0.365,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered15multi_hop_curve8swap_hop17hf9fc08eed996a324E"
+   },
+   {
+    "address": "0x16e58",
+    "size": 15424,
+    "delta": -3160,
+    "shape": 0.268,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6buy_v211buy_handler17h33340742a10c508dE"
+   },
+   {
+    "address": "0x85e98",
+    "size": 14104,
+    "delta": -4480,
+    "shape": 0.265,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered7sell_v27execute17hdee0c05d3d287fefE"
+   },
+   {
+    "address": "0x1aea8",
+    "size": 20096,
+    "delta": 1512,
+    "shape": 0.193,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6buy_v226buy_exact_quote_in_handler17h569ead18f71b59a9E"
+   },
+   {
+    "address": "0x14e680",
+    "size": 13224,
+    "delta": -5360,
+    "shape": 0.205,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered16buy_exact_sol_in17h49bc4356a9e68eb0E"
+   }
+  ]
+ },
+ {
+  "target": "0x6cd78",
+  "bytes": 8544,
+  "instructions": 1068,
+  "candidates": [
+   {
+    "address": "0x81800",
+    "size": 8816,
+    "delta": 272,
+    "shape": 0.849,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered11legacy_sell22process_cashback_inner17ha295bca94238997cE"
+   },
+   {
+    "address": "0x92d20",
+    "size": 8464,
+    "delta": -80,
+    "shape": 0.33,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered16token_incentives22claim_token_incentives8cashback8claim_v217hd7264e3aea9beec9E"
+   },
+   {
+    "address": "0x151a28",
+    "size": 8488,
+    "delta": -56,
+    "shape": 0.235,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered4sell17hdbe08e290616ef2cE"
+   },
+   {
+    "address": "0x14b1d8",
+    "size": 10880,
+    "delta": 2336,
+    "shape": 0.178,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered3buy17h79de7a0a523c1cacE"
+   },
+   {
+    "address": "0xa0ef8",
+    "size": 7800,
+    "delta": -744,
+    "shape": 0.262,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade15buy_exact_quote17h729b305ff0379d4dE"
+   }
+  ]
+ },
+ {
+  "target": "0x72810",
+  "bytes": 7832,
+  "instructions": 979,
+  "candidates": [
+   {
+    "address": "0x8d838",
+    "size": 8784,
+    "delta": 952,
+    "shape": 0.533,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5sweep7execute17h63039d4d7bb21efdE"
+   },
+   {
+    "address": "0x4a5e8",
+    "size": 5240,
+    "delta": -2592,
+    "shape": 0.392,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6extend7execute17hbbc393eb4b854b29E"
+   },
+   {
+    "address": "0x92d20",
+    "size": 8464,
+    "delta": 632,
+    "shape": 0.287,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered16token_incentives22claim_token_incentives8cashback8claim_v217hd7264e3aea9beec9E"
+   },
+   {
+    "address": "0x151a28",
+    "size": 8488,
+    "delta": 656,
+    "shape": 0.332,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered4sell17hdbe08e290616ef2cE"
+   },
+   {
+    "address": "0xa3798",
+    "size": 6056,
+    "delta": -1776,
+    "shape": 0.407,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade4sell17h3feba226d1168c0aE"
+   }
+  ]
+ },
+ {
+  "target": "0x77940",
+  "bytes": 8832,
+  "instructions": 1104,
+  "candidates": [
+   {
+    "address": "0x92d20",
+    "size": 8464,
+    "delta": -368,
+    "shape": 0.553,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered16token_incentives22claim_token_incentives8cashback8claim_v217hd7264e3aea9beec9E"
+   },
+   {
+    "address": "0x57b30",
+    "size": 8888,
+    "delta": 56,
+    "shape": 0.34,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered10migrate_v27execute17h07422317a96b2046E"
+   },
+   {
+    "address": "0x151a28",
+    "size": 8488,
+    "delta": -344,
+    "shape": 0.35,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered4sell17hdbe08e290616ef2cE"
+   },
+   {
+    "address": "0x14b1d8",
+    "size": 10880,
+    "delta": 2048,
+    "shape": 0.244,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered3buy17h79de7a0a523c1cacE"
+   },
+   {
+    "address": "0xa0ef8",
+    "size": 7800,
+    "delta": -1032,
+    "shape": 0.224,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade15buy_exact_quote17h729b305ff0379d4dE"
+   }
+  ]
+ },
+ {
+  "target": "0x80df8",
+  "bytes": 2120,
+  "instructions": 265,
+  "candidates": [
+   {
+    "address": "0x997f0",
+    "size": 2056,
+    "delta": -64,
+    "shape": 0.785,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade12v3_buy_costs17h7b9c6f53e4a86951E"
+   },
+   {
+    "address": "0xa7e80",
+    "size": 2136,
+    "delta": 16,
+    "shape": 0.568,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered16constant_product6output17h28bee2a21f317522E"
+   },
+   {
+    "address": "0x990c0",
+    "size": 1840,
+    "delta": -280,
+    "shape": 0.36,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade20net_quote_for_budget17h66ab5c4bdfbf343aE"
+   },
+   {
+    "address": "0x9b8c0",
+    "size": 1424,
+    "delta": -696,
+    "shape": 0.605,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade16v3_post_complete17ha1174fd29a006426E"
+   },
+   {
+    "address": "0xb36d8",
+    "size": 1456,
+    "delta": -664,
+    "shape": 0.622,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered59_$LT$impl$u20$pump_recovered..trade_types..BondingCurve$GT$11accrue_fees17ha6a973ebbff6219bE"
+   }
+  ]
+ },
+ {
+  "target": "0x83c00",
+  "bytes": 3440,
+  "instructions": 430,
+  "candidates": [
+   {
+    "address": "0x9ecb8",
+    "size": 3408,
+    "delta": -32,
+    "shape": 0.822,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade14v3_execute_buy17h66a4a2076c16dbefE"
+   },
+   {
+    "address": "0x9fe18",
+    "size": 3800,
+    "delta": 360,
+    "shape": 0.283,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade3buy17h040b74ddebd76776E"
+   },
+   {
+    "address": "0x36b08",
+    "size": 2696,
+    "delta": -744,
+    "shape": 0.282,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered10collect_v27collect17h916e78b8aa6ecf86E"
+   },
+   {
+    "address": "0x35ad0",
+    "size": 4152,
+    "delta": 712,
+    "shape": 0.228,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered10collect_v219collect_creator_fee17h56c91689fff56276E"
+   },
+   {
+    "address": "0x12e730",
+    "size": 3656,
+    "delta": 216,
+    "shape": 0.214,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered9__private5__idl20__idl_create_account17h6f19e0e1d51c21a4E"
+   }
+  ]
+ },
+ {
+  "target": "0x13b9b8",
+  "bytes": 15480,
+  "instructions": 1935,
+  "candidates": [
+   {
+    "address": "0x16e58",
+    "size": 15424,
+    "delta": -56,
+    "shape": 0.64,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6buy_v211buy_handler17h33340742a10c508dE"
+   },
+   {
+    "address": "0x85e98",
+    "size": 14104,
+    "delta": -1376,
+    "shape": 0.498,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered7sell_v27execute17hdee0c05d3d287fefE"
+   },
+   {
+    "address": "0x14e680",
+    "size": 13224,
+    "delta": -2256,
+    "shape": 0.215,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered16buy_exact_sol_in17h49bc4356a9e68eb0E"
+   },
+   {
+    "address": "0x1aea8",
+    "size": 20096,
+    "delta": 4616,
+    "shape": 0.424,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6buy_v226buy_exact_quote_in_handler17h569ead18f71b59a9E"
+   },
+   {
+    "address": "0x2fd30",
+    "size": 19904,
+    "delta": 4424,
+    "shape": 0.289,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered9admin_cto7execute17h3bd6d7f34f2e30d7E"
+   }
+  ]
+ },
+ {
+  "target": "0x13f630",
+  "bytes": 20184,
+  "instructions": 2523,
+  "candidates": [
+   {
+    "address": "0x1aea8",
+    "size": 20096,
+    "delta": -88,
+    "shape": 0.708,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6buy_v226buy_exact_quote_in_handler17h569ead18f71b59a9E"
+   },
+   {
+    "address": "0x2fd30",
+    "size": 19904,
+    "delta": -280,
+    "shape": 0.249,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered9admin_cto7execute17h3bd6d7f34f2e30d7E"
+   },
+   {
+    "address": "0x16e58",
+    "size": 15424,
+    "delta": -4760,
+    "shape": 0.428,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6buy_v211buy_handler17h33340742a10c508dE"
+   },
+   {
+    "address": "0x85e98",
+    "size": 14104,
+    "delta": -6080,
+    "shape": 0.303,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered7sell_v27execute17hdee0c05d3d287fefE"
+   },
+   {
+    "address": "0x14e680",
+    "size": 13224,
+    "delta": -6960,
+    "shape": 0.323,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered16buy_exact_sol_in17h49bc4356a9e68eb0E"
+   }
+  ]
+ },
+ {
+  "target": "0x144508",
+  "bytes": 13976,
+  "instructions": 1747,
+  "candidates": [
+   {
+    "address": "0x85e98",
+    "size": 14104,
+    "delta": 128,
+    "shape": 0.757,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered7sell_v27execute17hdee0c05d3d287fefE"
+   },
+   {
+    "address": "0x16e58",
+    "size": 15424,
+    "delta": 1448,
+    "shape": 0.52,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6buy_v211buy_handler17h33340742a10c508dE"
+   },
+   {
+    "address": "0x14e680",
+    "size": 13224,
+    "delta": -752,
+    "shape": 0.235,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered16buy_exact_sol_in17h49bc4356a9e68eb0E"
+   },
+   {
+    "address": "0x14b1d8",
+    "size": 10880,
+    "delta": -3096,
+    "shape": 0.298,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered3buy17h79de7a0a523c1cacE"
+   },
+   {
+    "address": "0x1aea8",
+    "size": 20096,
+    "delta": 6120,
+    "shape": 0.325,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6buy_v226buy_exact_quote_in_handler17h569ead18f71b59a9E"
+   }
+  ]
+ },
+ {
+  "target": "0x147ba0",
+  "bytes": 3672,
+  "instructions": 459,
+  "candidates": [
+   {
+    "address": "0x9fe18",
+    "size": 3800,
+    "delta": 128,
+    "shape": 0.758,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade3buy17h040b74ddebd76776E"
+   },
+   {
+    "address": "0x98070",
+    "size": 2944,
+    "delta": -728,
+    "shape": 0.348,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade38validate_buyback_fee_recipient_account17hf09381391a7372b2E"
+   },
+   {
+    "address": "0x77ec8",
+    "size": 3192,
+    "delta": -480,
+    "shape": 0.42,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered10pump_quote13validate_pool17he0491e4c258c764cE"
+   },
+   {
+    "address": "0x77518",
+    "size": 2480,
+    "delta": -1192,
+    "shape": 0.408,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered10pump_quote12vault_amount17hc57877c6e397a5b2E"
+   },
+   {
+    "address": "0x91e08",
+    "size": 3864,
+    "delta": 192,
+    "shape": 0.246,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered16token_incentives22claim_token_incentives8cashback5claim17hba3bd7b83db36eb1E"
+   }
+  ]
+ },
+ {
+  "target": "0x1489f8",
+  "bytes": 7856,
+  "instructions": 982,
+  "candidates": [
+   {
+    "address": "0xa0ef8",
+    "size": 7800,
+    "delta": -56,
+    "shape": 0.709,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade15buy_exact_quote17h729b305ff0379d4dE"
+   },
+   {
+    "address": "0x151a28",
+    "size": 8488,
+    "delta": 632,
+    "shape": 0.263,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered4sell17hdbe08e290616ef2cE"
+   },
+   {
+    "address": "0xa3798",
+    "size": 6056,
+    "delta": -1800,
+    "shape": 0.337,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade4sell17h3feba226d1168c0aE"
+   },
+   {
+    "address": "0x14b1d8",
+    "size": 10880,
+    "delta": 3024,
+    "shape": 0.313,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered3buy17h79de7a0a523c1cacE"
+   },
+   {
+    "address": "0x57b30",
+    "size": 8888,
+    "delta": 1032,
+    "shape": 0.226,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered10migrate_v27execute17h07422317a96b2046E"
+   }
+  ]
+ },
+ {
+  "target": "0x14a8a8",
+  "bytes": 6032,
+  "instructions": 754,
+  "candidates": [
+   {
+    "address": "0xa3798",
+    "size": 6056,
+    "delta": 24,
+    "shape": 0.731,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered5trade4sell17h3feba226d1168c0aE"
+   },
+   {
+    "address": "0x4c588",
+    "size": 5440,
+    "delta": -592,
+    "shape": 0.448,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered7migrate7execute17hfa353d511c976bb4E"
+   },
+   {
+    "address": "0x3b9f0",
+    "size": 5136,
+    "delta": -896,
+    "shape": 0.417,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered12distribution7execute17he4383d18b742f877E"
+   },
+   {
+    "address": "0x151a28",
+    "size": 8488,
+    "delta": 2456,
+    "shape": 0.439,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered4sell17hdbe08e290616ef2cE"
+   },
+   {
+    "address": "0x4a5e8",
+    "size": 5240,
+    "delta": -792,
+    "shape": 0.385,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6extend7execute17hbbc393eb4b854b29E"
+   }
+  ]
+ },
+ {
+  "target": "0x14f4e0",
+  "bytes": 13224,
+  "instructions": 1653,
+  "candidates": [
+   {
+    "address": "0x14e680",
+    "size": 13224,
+    "delta": 0,
+    "shape": 0.984,
+    "diff_words": 224,
+    "name": "_ZN14pump_recovered14pump_recovered16buy_exact_sol_in17h49bc4356a9e68eb0E"
+   },
+   {
+    "address": "0x14b1d8",
+    "size": 10880,
+    "delta": -2344,
+    "shape": 0.526,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered14pump_recovered3buy17h79de7a0a523c1cacE"
+   },
+   {
+    "address": "0x111a38",
+    "size": 13824,
+    "delta": 600,
+    "shape": 0.106,
+    "diff_words": null,
+    "name": "_ZN113_$LT$pump_recovered..trade..SellV3$u20$as$u20$anchor_lang..Accounts$LT$pump_recovered..trade..SellV3Bumps$GT$$GT$12try_accounts17he4e7ded9e055501dE"
+   },
+   {
+    "address": "0x85e98",
+    "size": 14104,
+    "delta": 880,
+    "shape": 0.237,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered7sell_v27execute17hdee0c05d3d287fefE"
+   },
+   {
+    "address": "0x16e58",
+    "size": 15424,
+    "delta": 2200,
+    "shape": 0.266,
+    "diff_words": null,
+    "name": "_ZN14pump_recovered6buy_v211buy_handler17h33340742a10c508dE"
+   }
+  ]
+ }
+]

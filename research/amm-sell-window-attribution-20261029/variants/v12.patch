@@ -1,0 +1,11 @@
+--- a/programs/pump-amm/src/instructions/swap/sell.rs
++++ b/programs/pump-amm/src/instructions/swap/sell.rs
+@@ -442,7 +442,7 @@
+ 
+     } else {
+         require!(*user_volume_accumulator.owner == crate::ID, PumpAmmError::InvalidCashbackAccumulator);
+-        let data = user_volume_accumulator.try_borrow_data()?;
++        let data = match user_volume_accumulator.try_borrow_data() { Ok(d) => d, Err(e) => return Err(e.into()) };
+ 
+         if data.len() < 8 || data[..8] != *UserVolumeAccumulator::DISCRIMINATOR {
+             return err!(PumpAmmError::InvalidCashbackAccumulator);

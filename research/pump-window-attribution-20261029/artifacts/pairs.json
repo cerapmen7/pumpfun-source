@@ -1,0 +1,1175 @@
+[
+ {
+  "target": "0x14f4e0",
+  "candidate": "0x14e680",
+  "symbol": "_ZN14pump_recovered14pump_recovered16buy_exact_sol_in17h49bc4356a9e68eb0E",
+  "deployed_bytes": 13224,
+  "candidate_bytes": 13224,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/buy.rs",
+    53,
+    6005
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    57,
+    6020
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    59,
+    6041
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    92,
+    6041
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    110,
+    6042
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    143,
+    6042
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    151,
+    6021
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    133,
+    6002
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/buy.rs",
+    53,
+    6005
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    57,
+    6020
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    59,
+    6041
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    92,
+    6041
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    110,
+    6042
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    143,
+    6042
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    151,
+    6021
+   ],
+   [
+    "programs/pump/src/buy.rs",
+    133,
+    6002
+   ]
+  ],
+  "equal_insns": 1618,
+  "replaced": 14,
+  "inserted": 35,
+  "deleted": 35,
+  "ops": 25
+ },
+ {
+  "target": "0x4c158",
+  "candidate": "0x5f438",
+  "symbol": "_ZN14pump_recovered10migrate_v223create_token_account_v217hebc7d3eb865ec10dE",
+  "deployed_bytes": 8368,
+  "candidate_bytes": 8424,
+  "deployed_tuples": [],
+  "candidate_tuples": [],
+  "equal_insns": 602,
+  "replaced": 344,
+  "inserted": 451,
+  "deleted": 444,
+  "ops": 220
+ },
+ {
+  "target": "0x80df8",
+  "candidate": "0x997f0",
+  "symbol": "_ZN14pump_recovered5trade12v3_buy_costs17h7b9c6f53e4a86951E",
+  "deployed_bytes": 2120,
+  "candidate_bytes": 2056,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/trade_v3.rs",
+    371,
+    6024
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    375,
+    6024
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/trade_v3.rs",
+    371,
+    6024
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    375,
+    6024
+   ]
+  ],
+  "equal_insns": 207,
+  "replaced": 55,
+  "inserted": 50,
+  "deleted": 58,
+  "ops": 68
+ },
+ {
+  "target": "0x83c00",
+  "candidate": "0x9ecb8",
+  "symbol": "_ZN14pump_recovered5trade14v3_execute_buy17h66a4a2076c16dbefE",
+  "deployed_bytes": 3440,
+  "candidate_bytes": 3408,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/trade_v3.rs",
+    691,
+    6024
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/trade_v3.rs",
+    691,
+    6024
+   ]
+  ],
+  "equal_insns": 316,
+  "replaced": 106,
+  "inserted": 110,
+  "deleted": 114,
+  "ops": 94
+ },
+ {
+  "target": "0x147ba0",
+  "candidate": "0x9fe18",
+  "symbol": "_ZN14pump_recovered5trade3buy17h040b74ddebd76776E",
+  "deployed_bytes": 3672,
+  "candidate_bytes": 3800,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/trade_v3.rs",
+    801,
+    6020
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    802,
+    6021
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    842,
+    6002
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/trade_v3.rs",
+    801,
+    6020
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    802,
+    6021
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    842,
+    6002
+   ]
+  ],
+  "equal_insns": 261,
+  "replaced": 195,
+  "inserted": 214,
+  "deleted": 198,
+  "ops": 172
+ },
+ {
+  "target": "0x1489f8",
+  "candidate": "0xa0ef8",
+  "symbol": "_ZN14pump_recovered5trade15buy_exact_quote17h729b305ff0379d4dE",
+  "deployed_bytes": 7856,
+  "candidate_bytes": 7800,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/trade_v3.rs",
+    881,
+    6020
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    882,
+    6041
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    891,
+    6041
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    926,
+    6021
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    1001,
+    6042
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    993,
+    6042
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    935,
+    6002
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    971,
+    6042
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/trade_v3.rs",
+    881,
+    6020
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    882,
+    6041
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    891,
+    6041
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    926,
+    6021
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    1001,
+    6042
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    993,
+    6042
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    935,
+    6002
+   ],
+   [
+    "programs/pump/src/trade_v3.rs",
+    971,
+    6042
+   ]
+  ],
+  "equal_insns": 293,
+  "replaced": 617,
+  "inserted": 682,
+  "deleted": 689,
+  "ops": 313
+ },
+ {
+  "target": "0x13b9b8",
+  "candidate": "0x16e58",
+  "symbol": "_ZN14pump_recovered6buy_v211buy_handler17h33340742a10c508dE",
+  "deployed_bytes": 15480,
+  "candidate_bytes": 15424,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/buy_v2.rs",
+    345,
+    6005
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    354,
+    6020
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    356,
+    6021
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    369,
+    6063
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    494,
+    6002
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/buy_v2.rs",
+    345,
+    6005
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    354,
+    6020
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    356,
+    6021
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    369,
+    6063
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    494,
+    6002
+   ]
+  ],
+  "equal_insns": 1297,
+  "replaced": 611,
+  "inserted": 631,
+  "deleted": 638,
+  "ops": 455
+ },
+ {
+  "target": "0x13f630",
+  "candidate": "0x1aea8",
+  "symbol": "_ZN14pump_recovered6buy_v226buy_exact_quote_in_handler17h569ead18f71b59a9E",
+  "deployed_bytes": 20184,
+  "candidate_bytes": 20096,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/buy_v2.rs",
+    769,
+    6020
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    767,
+    6005
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    771,
+    6041
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    780,
+    6063
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    873,
+    6041
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    907,
+    6041
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    921,
+    6042
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    967,
+    6002
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    986,
+    6042
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    979,
+    6042
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    997,
+    6021
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/buy_v2.rs",
+    769,
+    6020
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    767,
+    6005
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    771,
+    6041
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    780,
+    6063
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    873,
+    6041
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    907,
+    6041
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    921,
+    6042
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    967,
+    6002
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    986,
+    6042
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    979,
+    6042
+   ],
+   [
+    "programs/pump/src/buy_v2.rs",
+    997,
+    6021
+   ]
+  ],
+  "equal_insns": 1765,
+  "replaced": 746,
+  "inserted": 747,
+  "deleted": 758,
+  "ops": 648
+ },
+ {
+  "target": "0x144508",
+  "candidate": "0x85e98",
+  "symbol": "_ZN14pump_recovered7sell_v27execute17hdee0c05d3d287fefE",
+  "deployed_bytes": 13976,
+  "candidate_bytes": 14104,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/sell_v2.rs",
+    243,
+    6005
+   ],
+   [
+    "programs/pump/src/sell_v2.rs",
+    245,
+    6022
+   ],
+   [
+    "programs/pump/src/sell_v2.rs",
+    247,
+    6023
+   ],
+   [
+    "programs/pump/src/sell_v2.rs",
+    260,
+    6063
+   ],
+   [
+    "programs/pump/src/sell_v2.rs",
+    379,
+    6003
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/sell_v2.rs",
+    243,
+    6005
+   ],
+   [
+    "programs/pump/src/sell_v2.rs",
+    245,
+    6022
+   ],
+   [
+    "programs/pump/src/sell_v2.rs",
+    247,
+    6023
+   ],
+   [
+    "programs/pump/src/sell_v2.rs",
+    260,
+    6063
+   ],
+   [
+    "programs/pump/src/sell_v2.rs",
+    379,
+    6003
+   ]
+  ],
+  "equal_insns": 1173,
+  "replaced": 555,
+  "inserted": 590,
+  "deleted": 574,
+  "ops": 396
+ },
+ {
+  "target": "0x6cd78",
+  "candidate": "0x81800",
+  "symbol": "_ZN14pump_recovered11legacy_sell22process_cashback_inner17ha295bca94238997cE",
+  "deployed_bytes": 8544,
+  "candidate_bytes": 8816,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/sell.rs",
+    null,
+    6073
+   ],
+   [
+    "programs/pump/src/sell.rs",
+    null,
+    6072
+   ],
+   [
+    "programs/pump/src/sell.rs",
+    81,
+    6073
+   ],
+   [
+    "programs/pump/src/sell.rs",
+    85,
+    6073
+   ],
+   [
+    "programs/pump/src/sell.rs",
+    107,
+    6074
+   ],
+   [
+    "programs/pump/src/sell.rs",
+    114,
+    6074
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/sell.rs",
+    null,
+    6073
+   ],
+   [
+    "programs/pump/src/sell.rs",
+    null,
+    6072
+   ],
+   [
+    "programs/pump/src/sell.rs",
+    81,
+    6073
+   ],
+   [
+    "programs/pump/src/sell.rs",
+    85,
+    6073
+   ],
+   [
+    "programs/pump/src/sell.rs",
+    107,
+    6074
+   ],
+   [
+    "programs/pump/src/sell.rs",
+    114,
+    6074
+   ]
+  ],
+  "equal_insns": 808,
+  "replaced": 238,
+  "inserted": 294,
+  "deleted": 260,
+  "ops": 243
+ },
+ {
+  "target": "0x77940",
+  "candidate": "0x92d20",
+  "symbol": "_ZN14pump_recovered16token_incentives22claim_token_incentives8cashback8claim_v217hd7264e3aea9beec9E",
+  "deployed_bytes": 8832,
+  "candidate_bytes": 8464,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/token_incentives/claim_token_incentives.rs",
+    305,
+    6064
+   ],
+   [
+    "programs/pump/src/token_incentives/claim_token_incentives.rs",
+    310,
+    6010
+   ],
+   [
+    "programs/pump/src/token_incentives/claim_token_incentives.rs",
+    342,
+    6076
+   ],
+   [
+    "programs/pump/src/token_incentives/claim_token_incentives.rs",
+    333,
+    6010
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/token_incentives/claim_token_incentives.rs",
+    305,
+    6064
+   ],
+   [
+    "programs/pump/src/token_incentives/claim_token_incentives.rs",
+    310,
+    6010
+   ],
+   [
+    "programs/pump/src/token_incentives/claim_token_incentives.rs",
+    333,
+    6010
+   ],
+   [
+    "programs/pump/src/token_incentives/claim_token_incentives.rs",
+    342,
+    6076
+   ]
+  ],
+  "equal_insns": 194,
+  "replaced": 893,
+  "inserted": 864,
+  "deleted": 910,
+  "ops": 159
+ },
+ {
+  "target": "0x72810",
+  "candidate": "0x8d838",
+  "symbol": "_ZN14pump_recovered5sweep7execute17h63039d4d7bb21efdE",
+  "deployed_bytes": 7832,
+  "candidate_bytes": 8784,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/sweep_fees.rs",
+    123,
+    6000
+   ],
+   [
+    "programs/pump/src/sweep_fees.rs",
+    2006,
+    null
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/sweep_fees.rs",
+    123,
+    6000
+   ],
+   [
+    "programs/pump/src/sweep_fees.rs",
+    2006,
+    null
+   ]
+  ],
+  "equal_insns": 332,
+  "replaced": 633,
+  "inserted": 766,
+  "deleted": 647,
+  "ops": 259
+ },
+ {
+  "target": "0x5b3b0",
+  "candidate": "0x67970",
+  "symbol": "_ZN14pump_recovered15multi_hop_curve8swap_hop17hf9fc08eed996a324E",
+  "deployed_bytes": 18584,
+  "candidate_bytes": 18536,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    484,
+    6108
+   ],
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    546,
+    6098
+   ],
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    686,
+    6022
+   ],
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    599,
+    6021
+   ],
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    590,
+    6020
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    484,
+    6108
+   ],
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    546,
+    6098
+   ],
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    581,
+    6024
+   ],
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    686,
+    6022
+   ],
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    599,
+    6021
+   ],
+   [
+    "programs/pump/src/multi_hop_curve_swap.rs",
+    590,
+    6020
+   ]
+  ],
+  "equal_insns": 456,
+  "replaced": 1852,
+  "inserted": 1861,
+  "deleted": 1867,
+  "ops": 360
+ },
+ {
+  "target": "0x1e7c0",
+  "candidate": "0x2c330",
+  "symbol": "_ZN14pump_recovered9create_v27execute17h3f7d08900031c023E",
+  "deployed_bytes": 15576,
+  "candidate_bytes": 14848,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/create_v2.rs",
+    716,
+    6082
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    774,
+    6077
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    732,
+    6030
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    738,
+    6046
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    719,
+    6084
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    258,
+    6065
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    198,
+    6027
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    778,
+    6078
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    205,
+    6064
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    541,
+    6043
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    758,
+    6071
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    210,
+    6064
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    709,
+    6048
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    547,
+    6044
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    553,
+    6045
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    220,
+    6063
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    243,
+    6063
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/create_v2.rs",
+    716,
+    6082
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    732,
+    6030
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    738,
+    6046
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    719,
+    6084
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    205,
+    6064
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    198,
+    6027
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    210,
+    6064
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    243,
+    6063
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    774,
+    6077
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    758,
+    6071
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    778,
+    6078
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    709,
+    6048
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    547,
+    6044
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    541,
+    6043
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    553,
+    6045
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    220,
+    6063
+   ],
+   [
+    "programs/pump/src/create_v2.rs",
+    258,
+    6065
+   ]
+  ],
+  "equal_insns": 502,
+  "replaced": 1391,
+  "inserted": 1354,
+  "deleted": 1445,
+  "ops": 411
+ },
+ {
+  "target": "0x22a10",
+  "candidate": "0x2fd30",
+  "symbol": "_ZN14pump_recovered9admin_cto7execute17h3bd6d7f34f2e30d7E",
+  "deployed_bytes": 27400,
+  "candidate_bytes": 19904,
+  "deployed_tuples": [
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    289,
+    6083
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    298,
+    6090
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    306,
+    6089
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    296,
+    6084
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    326,
+    6091
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    312,
+    6019
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    307,
+    6030
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    330,
+    6080
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    338,
+    6078
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    334,
+    6077
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    410,
+    6095
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    719,
+    6093
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    2006,
+    null
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    660,
+    6093
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    284,
+    6088
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    556,
+    6092
+   ]
+  ],
+  "candidate_tuples": [
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    296,
+    6084
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    289,
+    6083
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    326,
+    6091
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    298,
+    6090
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    284,
+    6088
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    306,
+    6089
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    307,
+    6030
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    312,
+    6019
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    330,
+    6080
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    334,
+    6077
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    338,
+    6078
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    410,
+    6095
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    556,
+    6092
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    648,
+    null
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    660,
+    6093
+   ],
+   [
+    "programs/pump/src/creator/admin_cto.rs",
+    719,
+    6093
+   ]
+  ],
+  "equal_insns": 339,
+  "replaced": 3080,
+  "inserted": 2149,
+  "deleted": 3086,
+  "ops": 329
+ }
+]

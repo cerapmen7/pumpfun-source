@@ -1,0 +1,265 @@
+[
+ {
+  "target": "0x1e7c0",
+  "candidate": "0x2c330",
+  "callee_multiset_equal": false,
+  "only_deployed": [
+   "e7a0b7da14a8",
+   "e7a0b7da14a8",
+   "e7a0b7da14a8",
+   "e7a0b7da14a8",
+   "e7a0b7da14a8"
+  ],
+  "only_candidate": [
+   "22dbc99b45dd",
+   "37d33bee1bd9",
+   "37d33bee1bd9",
+   "37d33bee1bd9",
+   "37d33bee1bd9",
+   "37d33bee1bd9"
+  ]
+ },
+ {
+  "target": "0x22a10",
+  "candidate": "0x2fd30",
+  "callee_multiset_equal": false,
+  "only_deployed": [
+   "a42ecdd794f8",
+   "d3608be3e4d4",
+   "e7a0b7da14a8",
+   "e7a0b7da14a8",
+   "e7a0b7da14a8",
+   "ed48988f0f1a"
+  ],
+  "only_candidate": [
+   "202d1699a5de",
+   "202d1699a5de",
+   "22dbc99b45dd",
+   "37d33bee1bd9",
+   "37d33bee1bd9",
+   "37d33bee1bd9",
+   "37d33bee1bd9",
+   "548a45328978",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "5d25881b59e3",
+   "c6bf0c3b88de"
+  ]
+ },
+ {
+  "target": "0x4c158",
+  "candidate": "0x5f438",
+  "callee_multiset_equal": true,
+  "only_deployed": [],
+  "only_candidate": []
+ },
+ {
+  "target": "0x5b3b0",
+  "candidate": "0x67970",
+  "callee_multiset_equal": false,
+  "only_deployed": [
+   "02679052beba",
+   "07e08bc5f613",
+   "22dbc99b45dd",
+   "22dbc99b45dd",
+   "22dbc99b45dd",
+   "22dbc99b45dd",
+   "2fd4e6026ebb",
+   "2fd4e6026ebb",
+   "2fd4e6026ebb",
+   "5131b7b942e8",
+   "5131b7b942e8",
+   "6fc8bc26d4ab",
+   "792d00b45e56",
+   "792d00b45e56",
+   "792d00b45e56",
+   "8ae4e28c9541",
+   "8ae4e28c9541",
+   "97a99bf0f627",
+   "a7ed1e96ecdb",
+   "a7ed1e96ecdb",
+   "a7ed1e96ecdb",
+   "b21f02685cdc",
+   "b21f02685cdc",
+   "b21f02685cdc",
+   "cbba8e35047c",
+   "cbba8e35047c",
+   "e73377b75ba1",
+   "e73377b75ba1",
+   "e73377b75ba1",
+   "ed0bef6ff14c",
+   "ed0bef6ff14c",
+   "fe59af0d9d9a"
+  ],
+  "only_candidate": [
+   "12ec21afd974",
+   "14ac0f39214e",
+   "14ac0f39214e",
+   "19cba788fee6",
+   "37d33bee1bd9",
+   "4cfbdad2806b",
+   "4d309b5bb532",
+   "5d25881b59e3",
+   "76594c3872db",
+   "9624182780f5",
+   "b0eb076b4374",
+   "b0eb076b4374",
+   "b72e67cec013",
+   "b72e67cec013",
+   "e2261e93ae84",
+   "e2261e93ae84",
+   "f8e0d4c0dc72",
+   "f8e0d4c0dc72",
+   "f8e0d4c0dc72",
+   "f8e0d4c0dc72",
+   "f8e0d4c0dc72",
+   "face05664208",
+   "face05664208"
+  ]
+ },
+ {
+  "target": "0x6cd78",
+  "candidate": "0x81800",
+  "callee_multiset_equal": false,
+  "only_deployed": [
+   "37d33bee1bd9"
+  ],
+  "only_candidate": [
+   "e7a0b7da14a8"
+  ]
+ },
+ {
+  "target": "0x72810",
+  "candidate": "0x8d838",
+  "callee_multiset_equal": false,
+  "only_deployed": [
+   "36bece918471",
+   "548a45328978",
+   "7925616ac4ff",
+   "7c46e4214f17",
+   "94f1d24b7672"
+  ],
+  "only_candidate": [
+   "07e08bc5f613",
+   "1a4ad11b35ea",
+   "384476bdc0f9",
+   "e382909a4c59",
+   "f5d13f40f514"
+  ]
+ },
+ {
+  "target": "0x77940",
+  "candidate": "0x92d20",
+  "callee_multiset_equal": false,
+  "only_deployed": [
+   "07e08bc5f613",
+   "07e08bc5f613",
+   "09c8071f96d4",
+   "1a4ad11b35ea",
+   "202d1699a5de",
+   "37d33bee1bd9",
+   "5d25881b59e3",
+   "5d25881b59e3"
+  ],
+  "only_candidate": [
+   "e7a0b7da14a8",
+   "ff3f8d51517a"
+  ]
+ },
+ {
+  "target": "0x80df8",
+  "candidate": "0x997f0",
+  "callee_multiset_equal": true,
+  "only_deployed": [],
+  "only_candidate": []
+ },
+ {
+  "target": "0x83c00",
+  "candidate": "0x9ecb8",
+  "callee_multiset_equal": true,
+  "only_deployed": [],
+  "only_candidate": []
+ },
+ {
+  "target": "0x13b9b8",
+  "candidate": "0x16e58",
+  "callee_multiset_equal": true,
+  "only_deployed": [],
+  "only_candidate": []
+ },
+ {
+  "target": "0x13f630",
+  "candidate": "0x1aea8",
+  "callee_multiset_equal": true,
+  "only_deployed": [],
+  "only_candidate": []
+ },
+ {
+  "target": "0x144508",
+  "candidate": "0x85e98",
+  "callee_multiset_equal": true,
+  "only_deployed": [],
+  "only_candidate": []
+ },
+ {
+  "target": "0x147ba0",
+  "candidate": "0x9fe18",
+  "callee_multiset_equal": false,
+  "only_deployed": [
+   "2ede91602362",
+   "b2370683ab92"
+  ],
+  "only_candidate": [
+   "492abf204c6b",
+   "f3f977e76d3d"
+  ]
+ },
+ {
+  "target": "0x1489f8",
+  "candidate": "0xa0ef8",
+  "callee_multiset_equal": false,
+  "only_deployed": [
+   "2ede91602362",
+   "b2370683ab92",
+   "b2370683ab92",
+   "b2370683ab92"
+  ],
+  "only_candidate": [
+   "492abf204c6b",
+   "f3f977e76d3d",
+   "f3f977e76d3d",
+   "f3f977e76d3d"
+  ]
+ },
+ {
+  "target": "0x14a8a8",
+  "candidate": "0xa3798",
+  "callee_multiset_equal": true,
+  "only_deployed": [],
+  "only_candidate": []
+ },
+ {
+  "target": "0x14f4e0",
+  "candidate": "0x14e680",
+  "callee_multiset_equal": true,
+  "only_deployed": [],
+  "only_candidate": []
+ }
+]

@@ -1,0 +1,20 @@
+--- a/programs/pump-amm/src/instructions/swap/sell.rs
++++ b/programs/pump-amm/src/instructions/swap/sell.rs
+@@ -465,7 +465,8 @@
+ 
+ 
+     require!(ata.is_writable, PumpAmmError::InvalidCashbackAccumulatorAta);
+-    if ata.data_is_empty() {
++    if !ata.data_is_empty() {
++    } else {
+         anchor_spl::associated_token::create(CpiContext::new(
+             associated_token_program.to_account_info(),
+             anchor_spl::associated_token::Create {
+@@ -490,7 +491,6 @@
+ 
+ 
+ 
+-
+ 
+ 
+ 

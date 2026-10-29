@@ -1,0 +1,25 @@
+{
+ "label": "linux01",
+ "command": [
+  "/home/tc147/.cache/solana/v1.44/platform-tools/rust/bin/cargo",
+  "build",
+  "--manifest-path",
+  "/mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-pump/packet-maintained/work/linux01/source/programs/pump/Cargo.toml",
+  "--locked",
+  "--offline",
+  "--release",
+  "--target",
+  "sbpf-solana-solana"
+ ],
+ "source_hashes_lf_ok": true,
+ "tool_sha256": {
+  "rust/bin/rustc": "c8807b7ebede8578ac5a257ea333780f9d89bd356064fd8184af7e996cb71a97",
+  "rust/bin/cargo": "d28444578306fe5a4f40524331411340123004e9e6556322fcabdbe351fe265d"
+ },
+ "target_libraries_ok": true,
+ "returncode": 0,
+ "unstripped_sha256": "297ef41e784ca5db96e6813345e7f6342b554efd46ccab47be4b26f63cbe47d9",
+ "candidate_sha256": "aa5b10d7e40bbb6a87d7055ca26aae85177d10dc00b9a55dc517aefa47624cf6",
+ "published_unstripped_sha256": "0f50faa8c325104dc77898ed84866dec2ad1eec475b6abba72c475cf7bf9bab6",
+ "published_candidate_sha256": "d0377d7cef5b7378063f8bfabac5dc9c08d29eeaaaaa14022d36909688ff5e1b"
+}

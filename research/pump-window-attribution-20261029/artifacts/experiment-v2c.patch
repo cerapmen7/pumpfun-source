@@ -1,0 +1,7 @@
+--- pristine
++++ v2c
+@@ -91,3 +91,3 @@
+ // layout-pad
+- require_gt!(raw_quote,0,PumpError::BuyNotEnoughSolToCoverFees);
++ if raw_quote>0{}else{return Err(error!(PumpError::BuyNotEnoughSolToCoverFees).with_values((raw_quote,0)));}
+  let protocol_fee=ceil_fee(raw_quote,protocol_fee_bps)?;

@@ -1,0 +1,54 @@
+blocks A=171 B=170 similarity=0.9443
+
+## replace A[47:49] B[47:48]
+   A[ 46] 0x04d408   32B   4 insns  first: mov64r r1, r10
+   A[ 47] 0x04d428   48B   5 insns  first: ldxdw r6, [r10-0x2a0]
+   A[ 48] 0x04d458    8B   1 insns  first: ja r0, 0x0, <OFF>
+   A[ 49] 0x04d460   16B   2 insns  first: ldxdw r2, [r1+0x8]
+   B[ 46] 0x04d408   32B   4 insns  first: mov64r r1, r10
+   B[ 47] 0x04d428   48B   5 insns  first: ldxdw r6, [r10-0x2a0]
+   B[ 48] 0x04d458   16B   2 insns  first: ldxdw r2, [r1+0x8]
+
+## insert A[126:126] B[125:127]
+   A[125] 0x04e248    8B   1 insns  first: jne r0, 0x0, <OFF>
+   A[126] 0x04e250    8B   1 insns  first: ja r0, 0x0, <OFF>
+   B[124] 0x04e240    8B   1 insns  first: jne r0, 0x0, <OFF>
+   B[125] 0x04e248   32B   4 insns  first: mov64r r1, r10
+   B[126] 0x04e268   32B   4 insns  first: ldxdw r9, [r10-0x2a8]
+   B[127] 0x04e288    8B   1 insns  first: ja r0, 0x0, <OFF>
+
+## insert A[127:127] B[128:133]
+   A[126] 0x04e250    8B   1 insns  first: ja r0, 0x0, <OFF>
+   A[127] 0x04e258   32B   4 insns  first: mov64r r1, r10
+   B[127] 0x04e288    8B   1 insns  first: ja r0, 0x0, <OFF>
+   B[128] 0x04e290   16B   2 insns  first: ldxdw r6, [r10-0x518]
+   B[129] 0x04e2a0   40B   4 insns  first: mov64r r1, r10
+   B[130] 0x04e2c8   40B   4 insns  first: mov64r r1, r10
+   B[131] 0x04e2f0  104B  12 insns  first: lddw r1, <ADDR>
+   B[132] 0x04e358   32B   4 insns  first: ldxdw r9, [r10-0x4d8]
+   B[133] 0x04e378   32B   4 insns  first: mov64r r1, r10
+
+## delete A[138:140] B[144:144]
+   A[137] 0x04e3c8   24B   3 insns  first: ldxdw r9, [r10-0x478]
+   A[138] 0x04e3e0   32B   4 insns  first: mov64r r1, r10
+   A[139] 0x04e400   32B   4 insns  first: ldxdw r9, [r10-0x2a8]
+   A[140] 0x04e420   48B   6 insns  first: mov64r r1, r10
+   B[143] 0x04e4e8   24B   3 insns  first: ldxdw r9, [r10-0x478]
+   B[144] 0x04e500   48B   6 insns  first: mov64r r1, r10
+
+## delete A[152:156] B[156:156]
+   A[151] 0x04e6f8   32B   4 insns  first: ldxdw r9, [r10-0x4c8]
+   A[152] 0x04e718   40B   4 insns  first: mov64r r1, r10
+   A[153] 0x04e740   40B   4 insns  first: mov64r r1, r10
+   A[154] 0x04e768  104B  12 insns  first: lddw r1, <ADDR>
+   A[155] 0x04e7d0   32B   4 insns  first: ldxdw r9, [r10-0x4d8]
+   A[156] 0x04e7f0   24B   3 insns  first: ldxdw r9, [r10-0x488]
+   B[155] 0x04e7d8   32B   4 insns  first: ldxdw r9, [r10-0x4c8]
+   B[156] 0x04e7f8   24B   3 insns  first: ldxdw r9, [r10-0x488]
+
+## replace A[169:171] B[169:170]
+   A[168] 0x04ea58   24B   3 insns  first: ldxdw r9, [r10-0x4a8]
+   A[169] 0x04ea70   16B   2 insns  first: ldxdw r9, [r10-0x4b8]
+   A[170] 0x04ea80   16B   2 insns  first: ldxdw r6, [r10-0x518]
+   B[168] 0x04ea60   24B   3 insns  first: ldxdw r9, [r10-0x4a8]
+   B[169] 0x04ea78   24B   3 insns  first: ldxdw r9, [r10-0x4b8]

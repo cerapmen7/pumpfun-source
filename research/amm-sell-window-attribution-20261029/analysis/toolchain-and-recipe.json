@@ -1,0 +1,19 @@
+{
+ "workspace_Cargo.lock_sha256": "eaf2a38ec5b814348cbe40e80ac24cd9a0a2f5ebf0a1a8be77b19cc1e94cdff4",
+ "ordered.ld_sha256": "e16a4a4209bc71ee6c2a35909e4fbea2dd12f39db53d35bad7f4a049c5709ca4",
+ "rustc": "1.79.0-dev (platform-tools v1.44)",
+ "rustc_sha256": "c8807b7ebede8578ac5a257ea333780f9d89bd356064fd8184af7e996cb71a97",
+ "cargo_sha256": "d28444578306fe5a4f40524331411340123004e9e6556322fcabdbe351fe265d",
+ "clang_sha256": "b6541efe3e5662c1e1679c8a819535da574823b68da32522164dbcdb6ef8b3d9",
+ "llvm_objcopy_v152_sha256": "673b3b86f0b1b8eadd755e29e2f66a7582248ef3bda7a267fbb370b733c1cb69",
+ "rust_lld_sha256": "f28db3647fcf67bd47f012a1c47fe679f5787a4e2bf9cd5b6fe4914b10622bda",
+ "crate_codegen_flags": [
+  "-C opt-level=3",
+  "-C panic=abort",
+  "-C embed-bitcode=no",
+  "-C codegen-units=1",
+  "-C overflow-checks=on",
+  "-C metadata=bb5f628ba4a31e11",
+  "-C strip=debuginfo"
+ ]
+}

@@ -1,0 +1,47 @@
+== date
+Thu Oct 29 11:07:13 AM UTC 2026
+== host
+Linux DESKTOP-VD32CR3 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 GNU/Linux
+== repo HEAD
+ref: refs/heads/main
+5bc20fe59624b533a63f6c94bb4ce16a6ff7935d
+== sparse
+/Cargo.toml
+/Cargo.lock
+/README.md
+/SECURITY.md
+/LICENSE
+/requirements.txt
+/.gitignore
+/programs/
+/crates/
+/scripts/
+/docs/
+/evidence/
+/tests/
+/research/pump-program-creator-notice-qualification-20261028/
+/research/amm-layout-closure-20261028/
+/repro/status.json
+/repro/programs.json
+/repro/dependencies.json
+/repro/dependency-status.json
+/repro/completion.json
+/repro/pump_amm/v2-mint-clone-recovery-20261028/
+== deployed sha
+7a19affaa2c6187e04a5fe0ea298cee81fa5eb8c24cfcc30d85f615e89f7b02d  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/pumpfun-source-maintained/evidence/original/pump/deployed.so
+== published artifacts
+0f50faa8c325104dc77898ed84866dec2ad1eec475b6abba72c475cf7bf9bab6  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/pumpfun-source-maintained/research/pump-program-creator-notice-qualification-20261028/artifacts/unstripped.so
+d0377d7cef5b7378063f8bfabac5dc9c08d29eeaaaaa14022d36909688ff5e1b  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/pumpfun-source-maintained/research/pump-program-creator-notice-qualification-20261028/artifacts/candidate.so
+== linux01/02 artifacts
+297ef41e784ca5db96e6813345e7f6342b554efd46ccab47be4b26f63cbe47d9  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-pump/packet-maintained/work/linux01/unstripped.so
+aa5b10d7e40bbb6a87d7055ca26aae85177d10dc00b9a55dc517aefa47624cf6  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-pump/packet-maintained/work/linux01/candidate.so
+297ef41e784ca5db96e6813345e7f6342b554efd46ccab47be4b26f63cbe47d9  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-pump/packet-maintained/work/linux02/unstripped.so
+aa5b10d7e40bbb6a87d7055ca26aae85177d10dc00b9a55dc517aefa47624cf6  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-pump/packet-maintained/work/linux02/candidate.so
+== toolchain
+rustc 1.79.0-dev
+cargo 1.79.0 (804e32543 2025-01-29)
+clang version 18.1.7-rust-dev (https://github.com/anza-xyz/llvm-project.git 08aedd64bf3abe4f163407b7bcf680403b84b32d)
+c8807b7ebede8578ac5a257ea333780f9d89bd356064fd8184af7e996cb71a97  /home/tc147/.cache/solana/v1.44/platform-tools/rust/bin/rustc
+d28444578306fe5a4f40524331411340123004e9e6556322fcabdbe351fe265d  /home/tc147/.cache/solana/v1.44/platform-tools/rust/bin/cargo
+b6541efe3e5662c1e1679c8a819535da574823b68da32522164dbcdb6ef8b3d9  /home/tc147/.cache/solana/v1.44/platform-tools/llvm/bin/clang
+673b3b86f0b1b8eadd755e29e2f66a7582248ef3bda7a267fbb370b733c1cb69  /home/tc147/.cache/solana/v1.52/platform-tools/llvm/bin/llvm-objcopy
