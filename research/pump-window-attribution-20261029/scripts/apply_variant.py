@@ -30,6 +30,22 @@ elif name == "v2c":       # line 92: faithful inversion
 elif name == "v3c":       # lines 92 + 110: faithful inversions
     setline(92, " if raw_quote>0{}else{return Err(error!(PumpError::BuyNotEnoughSolToCoverFees).with_values((raw_quote,0)));}")
     setline(110, " if quote>0{}else{return Err(error!(PumpError::BuySlippageBelowMinTokensOut).with_values((quote,0)));}")
+elif name == "a1":       # function attribute: inline(never)
+    setline(9, lines[8].rstrip("\r\n").replace("#[inline]", "#[inline(never)]"))
+elif name == "a2":       # function attribute: cold + inline(never)
+    setline(9, lines[8].rstrip("\r\n").replace("#[inline]", "#[cold] #[inline(never)]"))
+elif name == "a3":       # function attribute: none
+    setline(9, lines[8].rstrip("\r\n").replace("#[inline] ", ""))
+elif name == "a4":       # function attribute: inline(always)
+    setline(9, lines[8].rstrip("\r\n").replace("#[inline]", "#[inline(always)]"))
+elif name in ("e1", "e2", "e3"):
+    helper = ("#[cold] #[inline(never)]" if name != "e2" else "#[inline(always)]") + \
+             " fn pump_cold_error(e:anchor_lang::error::Error)->anchor_lang::error::Error{e}\n"
+    if name in ("e1", "e3"):
+        setline(110, " if quote==0{return Err(pump_cold_error(error!(PumpError::BuySlippageBelowMinTokensOut).with_values((quote,0))));}")
+    if name == "e3":
+        setline(92, " if raw_quote==0{return Err(pump_cold_error(error!(PumpError::BuyNotEnoughSolToCoverFees).with_values((raw_quote,0))));}")
+    lines.append(helper)
 elif name == "v4":        # line 57 + 59 explicit zero tests
     setline(57, " if min_tokens_out==0{return Err(PumpError::BuyZeroAmount.into());}")
     setline(59, " if spendable_sol_in==0{return Err(PumpError::BuyNotEnoughSolToCoverFees.into());}")

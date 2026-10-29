@@ -1,0 +1,11 @@
+--- a/programs/pump-amm/src/instructions/swap/sell.rs
++++ b/programs/pump-amm/src/instructions/swap/sell.rs
+@@ -359,7 +359,7 @@
+ 
+ 
+ 
+-
++#[cold]
+ #[allow(clippy::too_many_arguments)]
+ fn cashback<'info>(
+     remaining_accounts: &'info [AccountInfo<'info>],

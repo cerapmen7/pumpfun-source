@@ -6,7 +6,7 @@
 binaire ne permet pas de trancher les formes source restantes, et les règles interdisent un
 changement non prouvé.
 
-Ce round établit trois choses :
+Ce round établit cinq choses :
 
 1. **La baseline est reproduite exactement** contre l'artefact publié : `scripts/window_measure.py`
    → **1 019 / 1 035 matched, 188 raw**, et les **16 non appariées sont exactement les cibles**.
@@ -23,6 +23,12 @@ Ce round établit trois choses :
    de condition fidèles déplacent bien la polarité et réduisent les régions de 8 à 5, mais
    **aucune ne matche** ; `matched` reste 1 019 et `raw` 183 pour toutes (zéro régression).
    Détail et preuves par micro-changement en §3bis.
+5. **Second levier : attributs de fonction** (7 variantes, §3ter). `#[inline(never)]`,
+   sans attribut et `#[cold] #[inline(never)]` **régressent** (1 014 / 1 014 / 1 013) :
+   `#[inline]` est porteur pour 5 fenêtres qui dépendent de l'inlining de `buy_exact_sol_in`.
+   `#[inline(always)]` conserve 1 019 mais éloigne la cible (1 581/23). Les helpers d'erreur
+   `#[cold]` déplacent bien le bloc mais ajoutent un appel (+40/+72 B) absent du déployé ;
+   la contre-épreuve `#[inline(always)]` est byte-identique à la référence. **Aucun gain.**
 
 | Mesure | Publié (`0f50faa8…`) | Linux avant (`linux01`) | Linux après (`linux02`) |
 |---|---:|---:|---:|
@@ -219,9 +225,50 @@ l'ordre de placement des blocs froids (construction d'erreur ligne 110 inline ch
 prochain levier prouvé est donc l'émission LLVM-IR de `buy_exact_sol_in`, pas une retouche
 de condition.
 
+## 3ter. Round 4 — attributs de fonction et outlining froid (7 variantes)
+
+Même protocole : `buy.rs` seul, builds Linux complets, `window_measure.py` sur l'`unstripped.so`.
+
+| Variante | Édition | Taille | Δ | Squelette | Régions | Multiset D/C | matched | raw | Perte |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `v0` | référence | 13 224 | 0 | 1 627/1 653 | 8 | 2 / 2 | 1 019 | 183 | 0 |
+| `a1` | `#[inline(never)]` sur la fonction | 12 992 | −232 | 1 242 | 145 | 266 / 237 | **1 014** | 183 | **−5** |
+| `a2` | `#[cold] #[inline(never)]` sur la fonction | 12 992 | −232 | 1 242 | 145 | 266 / 237 | **1 013** | 183 | **−6** |
+| `a3` | attribut supprimé | 12 992 | −232 | 1 242 | 145 | 266 / 237 | **1 014** | 183 | **−5** |
+| `a4` | `#[inline(always)]` sur la fonction | 13 224 | 0 | 1 581 | 23 | 35 / 35 | 1 019 | 183 | 0 |
+| `e1` | bras 110 → helper `#[cold] #[inline(never)]` (pass-through) | 13 264 | +40 | 1 607 | 6 | 3 / 8 | 1 019 | 183 | 0 |
+| `e2` | bras 110 → helper `#[inline(always)]` (contre-épreuve) | 13 224 | 0 | 1 627 | 8 | 2 / 2 | 1 019 | 183 | 0 |
+| `e3` | bras 92+110 → helper `#[cold]` | 13 296 | +72 | 1 572 | 8 | 4 / 13 | 1 019 | 183 | 0 |
+
+Faits mesurés :
+
+1. **`#[inline]` est porteur** : `a1` et `a3` produisent le **même binaire** (`79619763…`,
+   12 992 B) et perdent exactement les 5 mêmes fenêtres (dont `0x14c038` `buy`, `0x152888`
+   `sell`, `0x3dd78` `validate_fee_recipient`, `0x89258` `trade_fees`, `0x9a048`
+   `split_protocol_fee`) : ces handlers ne matchent que parce que `buy_exact_sol_in` y est
+   inliné. `a2` en perd une sixième (`0x12abc8`, wrapper `buy_exact_sol_in`). **Rejetées.**
+2. **`#[inline(always)]` (a4)** conserve le set mais **éloigne** la cible : 1 581/1 653,
+   23 régions (contre 1 627/8). Rejetée.
+3. **Outlining froid (e1/e3)** : le helper `#[cold] #[inline(never)]` **déplace réellement
+   le bloc d'erreur** — la région `D[399:440]` disparaît et un bloc est inséré à
+   `C[483:520]` (e1) — mais il **ajoute un appel** (+40 B, +72 B) et un callee que le
+   déployé ne possède pas (son multiensemble de callees est déjà égal). Le corps ne peut
+   donc pas être byte-identique, même si l'ordre des blocs se rapproche (régions 8→6).
+   Les encodages cibles `jge r3, r0` (`0x3d`) et `jne r3, 0` (`0x55`) restent **absents**
+   de e1/e3 (multiset D-only = 3 et 4) : le placement froid ne les produit pas.
+4. **Contre-épreuve e2** : le pass-through `#[inline(always)]` est **byte-identique à `v0`**
+   (`297ef41e…`) : LLVM l'élimine entièrement. Aucun effet de bord possible.
+
+Conclusion : les attributs ne peuvent pas gagner cette fenêtre. Soit ils changent l'inlining
+des appelants (régressions prouvées), soit ils ajoutent un appel absent du déployé (e1/e3),
+soit ils sont canonisés/supprimés (e2) ou éloignent (a4). Le déployé place ses blocs d'erreur
+**inline, sans appel de helper froid supplémentaire** ; le levier restant est l'ordre de blocs
+LLVM-IR, pas les attributs.
+
 ## 4. Pourquoi aucun patch
 
-Cinq variantes ciblées (§3bis) ont testé les leviers source sur `0x14f4e0` ; aucune ne matche.
+Douze variantes ciblées (§3bis pour les conditions, §3ter pour les attributs) ont testé les
+leviers source sur `0x14f4e0` ; aucune ne matche, et trois régressent le set.
 Aucune des causes identifiées ne se corrige par un changement de source **prouvé** :
 
 - les écarts majoritaires sont des **ordres de blocs LLVM** (polarités `jge/jlt`, `jne/jeq`,
@@ -299,9 +346,12 @@ packet-maintained/
     before.json, after.json       mesures linux01 / linux02 (1019/183)
     published-vs-linux.json       écarts raw (7 perdus, 2 gagnés), matched identiques
     analysis16.json               table machine des 16 (tuples, squelette, régions, callees)
-    variants-0x14f4e0.json        les 5 variantes : taille, squelette, régions, multiset, matched
-    measure-v0.json … v3c.json    mesures complètes de chaque variante (matched/raw/sets)
-    experiment-v1.patch … v3c.patch  diffs exacts des 5 variantes (v1, v1c, v1d, v2c, v3c ; aucune retenue)
+    variants-0x14f4e0.json        les 5 variantes de condition : taille, squelette, régions, multiset
+    variants-attributes.json      les 7 variantes d'attributs + pertes de fenêtres nommées
+    measure-v0.json … v3c.json    mesures complètes des variantes de condition
+    measure-a1.json … e3.json     mesures complètes des variantes d'attributs
+    experiment-v1.patch … v3c.patch  diffs des variantes de condition (aucune retenue)
+    experiment-a1.patch … e3.patch   diffs des variantes d'attributs (aucune retenue)
     table16.md                    table Markdown
     callee-signatures.json        comparaison alias-free des callees
     candidate-match.json          meilleures contreparties par fenêtre

@@ -1,0 +1,48 @@
+programs/pump-amm/src/curve/constant_product.rs  sites=7
+programs/pump-amm/src/curve/fees.rs  sites=6
+programs/pump-amm/src/instructions/admin/admin_cto_pool.rs  sites=9
+programs/pump-amm/src/instructions/admin/create_config.rs  sites=1
+programs/pump-amm/src/instructions/admin/set_reserved_fee_recipients.rs  sites=2
+programs/pump-amm/src/instructions/admin/toggle_boost.rs  sites=1
+programs/pump-amm/src/instructions/admin/toggle_cashback_enabled.rs  sites=1
+programs/pump-amm/src/instructions/admin/toggle_mayhem_mode.rs  sites=1
+programs/pump-amm/src/instructions/admin/update_buyback_config.rs  sites=1
+programs/pump-amm/src/instructions/boost.rs  sites=11
+programs/pump-amm/src/instructions/coin_creator/collect_coin_creator_fee.rs  sites=1
+programs/pump-amm/src/instructions/coin_creator/migrate_pool_coin_creator.rs  sites=2
+programs/pump-amm/src/instructions/coin_creator/set_coin_creator.rs  sites=1
+programs/pump-amm/src/instructions/create_pool.rs  sites=15
+programs/pump-amm/src/instructions/extend_account.rs  sites=2
+programs/pump-amm/src/instructions/liquidity/deposit.rs  sites=12
+programs/pump-amm/src/instructions/liquidity/withdraw.rs  sites=12
+programs/pump-amm/src/instructions/swap/buy.rs  sites=24
+programs/pump-amm/src/instructions/swap/mod.rs  sites=1
+programs/pump-amm/src/instructions/swap/multi_hop_swap.rs  sites=27
+programs/pump-amm/src/instructions/swap/sell.rs  sites=18
+    0x04a058 line=101 code=6021
+    0x04a148 line=110 code=6001
+    0x04c0a8 line=167 code=6023
+    0x04c2b0 line=179 code=6023
+    0x04c4b8 line=183 code=6023
+    0x04c6c0 line=196 code=6023
+    0x04c9a8 line=378 code=6059
+    0x04ce88 line=383 code=6059
+    0x04d038 line=392 code=6060
+    0x04d1f0 line=395 code=6060
+    0x04d380 line=444 code=6060
+    0x11bd30 line=467 code=6061
+    0x04eda0 line=520 code=6062
+    0x04ee80 line=526 code=6062
+    0x04a898 line=6004 code=189
+    0x04db50 line=6060 code=448
+    0x04e198 line=6061 code=464
+    0x04a4a8 line=6063 code=171
+programs/pump-amm/src/instructions/swap/trade_v2.rs  sites=34
+programs/pump-amm/src/instructions/sweep_fees.rs  sites=2
+programs/pump-amm/src/instructions/token_incentives/init_user_volume_accumulator.rs  sites=1
+programs/pump-amm/src/lib.rs  sites=6
+programs/pump-amm/src/state/global_config.rs  sites=13
+programs/pump-amm/src/state/pool.rs  sites=11
+programs/pump-amm/src/state/volume_accumulator.rs  sites=12
+programs/pump-amm/src/utils/token.rs  sites=1
+programs/pump-amm/src/utils/transfer_fee.rs  sites=4

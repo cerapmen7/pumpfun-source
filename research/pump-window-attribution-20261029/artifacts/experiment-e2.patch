@@ -1,0 +1,5 @@
+--- pristine
++++ e2
+@@ -300 +300,2 @@
+ }
++#[inline(always)] fn pump_cold_error(e:anchor_lang::error::Error)->anchor_lang::error::Error{e}

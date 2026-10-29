@@ -20,6 +20,11 @@ lalalune/pumpfun-source (MIT) ; métrique = `scripts/window_measure.py` du check
   10 variantes de forme source ont été testées ; 8 produisent un binaire
   **byte-identique** au build maintenu, 1 est rejetée (changement global), 1 contrôle
   positif prouve que la boucle rebuild bien. Zéro régression (784/784 conservés).
+- **Phase 3bis (attributs) : résultat négatif prouvé.** `#[cold] #[inline(never)]`
+  *sort* le bras 467 de la fenêtre (cashback 8 864 o, helper de 520 o hors fenêtre) —
+  l'inverse du déployé, qui le garde intra-fonction à `0x4e718`. `#[inline(always)]`
+  et le helper de check donnent un binaire **identique**. `#[cold]` sur `cashback`
+  régresse (783/785). Aucun attribut ne produit un bloc froid intra-fonction.
   `0x4c750` reste non appariée ; la cause est identifiée et prouvée au niveau IR/bloc.
 
 ---
@@ -205,6 +210,54 @@ sont tous non-gagnants).
 
 ---
 
+## 3bis. Mission « attributs de fonction » — variantes testées et mesurées
+
+Hypothèse testée : demander au compilateur l'outlining du bras d'erreur 467 en zone
+froide (`#[cold] #[inline(never)]`) ou son contraire (`#[inline(always)]`), puis
+cibler l'encodage de `0x4d450`. Toutes les variantes conservent la sémantique et les
+lignes d'erreur 378/383/392/395/444/448/464/467/502 (vérifié par `errsites2`/`all_tuples`).
+
+| variante | changement (source) | cashback | insns | sha256 | matched | raw | verdict |
+|---|---|---:|---:|---|---:|---:|---|
+| base | — | 9 024 | 1 075 | `86dbc2c6…` | 784 | 784 | référence |
+| **a1** | `#[cold] #[inline(never)] fn cold_467()` imbriqué (error! ligne 467) + `if !ata.is_writable { return cold_467(); }` | **8 864** | 1 058 | `4e6df695…` | 784 | 257 | **outline** : `cashback::cold_467` = 520 o à `0x11bbb8`, hors fenêtre → taille ≠ 9 024 |
+| **a2** | même helper avec `#[inline(always)]` | 9 024 | 1 075 | `86dbc2c6…` | 784 | 784 | **byte-identique** (inliné) |
+| **a3** | `#[cold] #[inline(never)] fn check_467(ata)` (check + bras) | 9 024 | 1 075 | `86dbc2c6…` | 784 | 784 | **byte-identique** (le helper local est inliné malgré l'attribut) |
+| **a4** | `#[cold]` sur `fn cashback` elle-même | 9 024 | 1 075 | `dddabfd3…` | **783** | 257 | **régression** : cashback déplacé à `0x119928`, fenêtre 0x49b50 perdue → rejeté |
+| **c1** | `match try_borrow_data() { Ok(d)=>d, Err(e)=>return Err(Error::from(e)) }` au lieu de `?` | **9 000** | 1 072 | `21062eb2…` | 784 | 257 | n'atteint pas l'encodage `jeqr+ja` (émet toujours `jne` à `0x4d440`) ; taille ≠ 9 024 |
+| **c2** | `.map_err(|e| Error::from(e))?` | 9 000 | 1 072 | `21062eb2…` | 784 | 257 | identique à c1 |
+| **a1c1** | a1 + c1 | **8 840** | 1 055 | `a1359f1f…` | 784 | 257 | outline + conversion explicite → taille ≠ 9 024 |
+
+### Ce que ces expériences prouvent
+
+1. **L'outlining froid est le contraire du layout déployé.** Chez le déployé, le bras
+   `sell.rs:467` est *dans* la fenêtre de 9 024 o (bloc à `0x4e718`, tuple à `0x4e768`).
+   `#[cold] #[inline(never)]` le sort dans une fonction séparée : le tuple reste bien
+   à la ligne 467 (preuve : `0x11bd30` dans `cashback::cold_467`), mais `cashback`
+   tombe à 8 864 o et le helper (520 o) est placé en fin de binaire. **Aucun attribut
+   d'outlining ne peut donc produire un bloc froid intra-fonction** ; la taille cible
+   de 9 024 o l'exclut structurellement.
+2. **`#[inline(always)]` et le helper de check sont des no-ops** : binaire
+   strictement identique à la référence (`86dbc2c6…`). Ils ne changent ni l'ordre
+   create/join ni le placement du bloc 467.
+3. **`#[cold]` sur la fonction elle-même est une régression** : le linker déplace
+   `cashback` (`0x119928`), la fenêtre appelante `0x49b50` (9 184 o) est perdue
+   (matched 783). Rejeté sans ambiguïté.
+4. **L'encodage `0x4d450` n'est pas une cible indépendante** : `c1`/`c2` (conversion
+   explicite du `?`) changent bien le code (9 000 o, 1 072 insns) mais émettent
+   toujours `jne r2, r1, +0xcb` — jamais le `jeqr r2, r3, +1; ja` du déployé. Cet
+   encodage est une conséquence de l'ordre de blocs (create→join, queue froide),
+   pas une forme de contrôle de flux à réécrire.
+5. **Zéro régression nette** : toutes les variantes non identiques laissent
+   `matched = 784` sauf a4 (783, rejeté) ; aucune n'est proposée pour intégration.
+
+**Conclusion de la mission attributs : résultat négatif documenté.** Le levier
+attributs ne peut pas produire un bloc froid *à l'intérieur* d'une fonction ; il ne
+reste donc que la reproduction de l'ordre IR create→join (bloc de jointure émis
+après le bloc `then`), qui n'a été obtenue par aucune forme source ni attribut testé.
+
+---
+
 ## 4. Commandes exactes
 
 Staging :
@@ -267,7 +320,12 @@ Toolchain : rustc `1.79.0-dev` (v1.44, sha `c8807b7e…`), cargo `1.79.0`
 packet-maintained/
   RESULT.md
   measurements/base.json          mesure 784/784 (sets matched/raw)
-  measurements/variants.json      hashes + mesures des 10 variantes
+  measurements/variants.json      hashes + mesures des 10 variantes de forme
+  measurements/attr-variants.json hashes + tailles/insns des 7 variantes attributs
+  analysis/attr-a1-outlined.txt   fonction cashback::cold_467 (a1)
+  analysis/attr-a1-tuples.txt     tuple 467 préservé dans le helper (0x11bd30)
+  analysis/attr-a4-functions.txt  cashback déplacé à 0x119928 (a4)
+  analysis/attr-c1-tryborrow.txt  c1 : toujours `jne`, pas `jeqr+ja`
   analysis/window-gap.txt         gap normalisé + reloc rows seulement-déployé/candidat
   analysis/block-sequence-diff.txt  déplacement du bloc 467 (preuve)
   analysis/block-inventory.txt    inventaire des blocs

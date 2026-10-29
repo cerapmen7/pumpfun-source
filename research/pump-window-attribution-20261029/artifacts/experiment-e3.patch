@@ -1,0 +1,15 @@
+--- pristine
++++ e3
+@@ -91,3 +91,3 @@
+ // layout-pad
+- require_gt!(raw_quote,0,PumpError::BuyNotEnoughSolToCoverFees);
++ if raw_quote==0{return Err(pump_cold_error(error!(PumpError::BuyNotEnoughSolToCoverFees).with_values((raw_quote,0))));}
+  let protocol_fee=ceil_fee(raw_quote,protocol_fee_bps)?;
+@@ -109,3 +109,3 @@
+ // layout-pad
+- require_gt!(quote,0,PumpError::BuySlippageBelowMinTokensOut);
++ if quote==0{return Err(pump_cold_error(error!(PumpError::BuySlippageBelowMinTokensOut).with_values((quote,0))));}
+  let amount=u64::try_from(crate::constant_product::tokens_for_quote(bonding_curve,quote)?).map_err(|_|PumpError::Truncation)?;
+@@ -300 +300,2 @@
+ }
++#[cold] #[inline(never)] fn pump_cold_error(e:anchor_lang::error::Error)->anchor_lang::error::Error{e}

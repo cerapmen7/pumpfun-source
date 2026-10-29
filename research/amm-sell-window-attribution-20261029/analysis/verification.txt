@@ -61,3 +61,192 @@ distinct drifts: [-1144, -832, -88, -8, 0, 8, 224]
 86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v8/candidate.so
 86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v9/candidate.so
 86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f  /mnt/c/Users/arzfeqsdeidm/Desktop/yop/AA/work-amm/mbuild/out-v10/candidate.so
+
+== 9. attribute variants (mission 2)
+-- cashback window / insns / hash / matched / raw
+[
+ {
+  "label": "base",
+  "sha256": "86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f",
+  "cashback_start": "0x4c750",
+  "cashback_size": 9024,
+  "insns": 1075,
+  "outlined": [],
+  "matched": 784,
+  "raw": 784,
+  "unmatched": [
+   [
+    313168,
+    9024
+   ]
+  ]
+ },
+ {
+  "label": "a1",
+  "sha256": "4e6df695353386d12558c2b99daa885ca6eaaded9975cb1939b9821f926136d6",
+  "cashback_start": "0x4c750",
+  "cashback_size": 8864,
+  "insns": 1058,
+  "outlined": [
+   [
+    "0x11bbb8",
+    520,
+    "cold_46717h4c331b06d337a39cE"
+   ]
+  ],
+  "matched": 784,
+  "raw": 257,
+  "unmatched": [
+   [
+    313168,
+    9024
+   ]
+  ]
+ },
+ {
+  "label": "a2",
+  "sha256": "86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f",
+  "cashback_start": "0x4c750",
+  "cashback_size": 9024,
+  "insns": 1075,
+  "outlined": [],
+  "matched": 784,
+  "raw": 784,
+  "unmatched": [
+   [
+    313168,
+    9024
+   ]
+  ]
+ },
+ {
+  "label": "a3",
+  "sha256": "86dbc2c64e81988dead173039b61fa01ba5f68a00fbb6f6dd49f2cda0afec37f",
+  "cashback_start": "0x4c750",
+  "cashback_size": 9024,
+  "insns": 1075,
+  "outlined": [],
+  "matched": 784,
+  "raw": 784,
+  "unmatched": [
+   [
+    313168,
+    9024
+   ]
+  ]
+ },
+ {
+  "label": "a4",
+  "sha256": "dddabfd3d1b0f728b3e3be4c825c45fa07c7fe885801cd0017ffd651ecf59939",
+  "cashback_start": "0x119928",
+  "cashback_size": 9024,
+  "insns": 1075,
+  "outlined": [],
+  "matched": 783,
+  "raw": 257,
+  "unmatched": [
+   [
+    301904,
+    9184
+   ],
+   [
+    313168,
+    9024
+   ]
+  ]
+ },
+ {
+  "label": "c1",
+  "sha256": "21062eb2fdb791f385e6529a7d3d2bb580e64b13d59f53803d89e5b32f272ef3",
+  "cashback_start": "0x4c750",
+  "cashback_size": 9000,
+  "insns": 1072,
+  "outlined": [],
+  "matched": 784,
+  "raw": 257,
+  "unmatched": [
+   [
+    313168,
+    9024
+   ]
+  ]
+ },
+ {
+  "label": "c2",
+  "sha256": "21062eb2fdb791f385e6529a7d3d2bb580e64b13d59f53803d89e5b32f272ef3",
+  "cashback_start": "0x4c750",
+  "cashback_size": 9000,
+  "insns": 1072,
+  "outlined": [],
+  "matched": 784,
+  "raw": 257,
+  "unmatched": [
+   [
+    313168,
+    9024
+   ]
+  ]
+ },
+ {
+  "label": "a1c1",
+  "sha256": "a1359f1f72d10f21121a8d6cc9d2673172b62eba99e3f28645f309711067b33d",
+  "cashback_start": "0x4c750",
+  "cashback_size": 8840,
+  "insns": 1055,
+  "outlined": [
+   [
+    "0x11bba0",
+    520,
+    "cold_46717h4c331b06d337a39cE"
+   ]
+  ],
+  "matched": 784,
+  "raw": 257,
+  "unmatched": [
+   [
+    313168,
+    9024
+   ]
+  ]
+ }
+]
+
+-- a1: outlined helper and preserved 467 tuple
+0x04c750   8864 _ZN18pump_amm_recovered12instructions4swap4sell8cashback
+0x0351a8   8104 _ZN18pump_amm_recovered12instructions4swap3buy19distribute_cashback
+0x05b518   4056 _ZN18pump_amm_recovered12instructions16token_incentives5claim14claim_cashback
+0x0ecb18   1624 _ZN18pump_amm_recovered9__private8__global23toggle_cashback_enabled
+0x0ed170   1104 _ZN18pump_amm_recovered9__private8__global14claim_cashback
+0x01b510    688 _ZN18pump_amm_recovered12instructions5admin23toggle_cashback_enabled23toggle_cashback_enabled
+0x04ef18    544 _ZN18pump_amm_recovered12instructions4swap8trade_v222validate_cashback_coin
+0x11bbb8    520 _ZN18pump_amm_recovered12instructions4swap4sell8cashback8cold_467
+33:    0x11bd30 line=467 code=6061
+
+-- a4: regression (cashback relocated)
+0x119928   9024 _ZN18pump_amm_recovered12instructions4swap4sell8cashback
+0x0351a8   8104 _ZN18pump_amm_recovered12instructions4swap3buy19distribute_cashback
+0x059288   4056 _ZN18pump_amm_recovered12instructions16token_incentives5claim14claim_cashback
+0x0ea888   1624 _ZN18pump_amm_recovered9__private8__global23toggle_cashback_enabled
+0x0eaee0   1104 _ZN18pump_amm_recovered9__private8__global14claim_cashback
+0x01b510    688 _ZN18pump_amm_recovered12instructions5admin23toggle_cashback_enabled23toggle_cashback_enabled
+0x04cc88    544 _ZN18pump_amm_recovered12instructions4swap8trade_v222validate_cashback_coin
+
+-- c1: try_borrow_data site still emits jne (not jeqr+ja)
+0x04d3f0: ldxdw r9, [r10 -0x400]
+0x04d3f8: ldxdw r8, [r10 -0x408]
+0x04d400: ja r0, 0x0, -0x6a   -> 0x4d0b8
+0x04d408: mov64 r1, r10
+0x04d410: add64 r1, -0x348
+0x04d418: mov64 r2, r7
+0x04d420: call +0x177a9   -> 0x109170
+0x04d428: lddw r1, -0x7fffffffffffffe6
+0x04d438: ldxdw r2, [r10 -0x348]
+0x04d440: jne r2, r1, +0xcb   -> 0x4daa0
+0x04d448: ldxdw r6, [r10 -0x338]
+0x04d450: ldxdw r1, [r10 -0x340]
+0x04d458: ldxdw r2, [r1 +0x8]
+0x04d460: jlt r2, 0x8, +0xd0   -> 0x4dae8
+0x04d468: ldxdw r1, [r1 +0x0]
+0x04d470: ldxdw r1, [r1 +0x0]
+0x04d478: lddw r2, -0x565ca99f18f00aa
+0x04d488: jne r1, r2, +0xcb   -> 0x4dae8

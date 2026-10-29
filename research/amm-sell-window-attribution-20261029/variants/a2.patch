@@ -1,0 +1,23 @@
+--- a/programs/pump-amm/src/instructions/swap/sell.rs
++++ b/programs/pump-amm/src/instructions/swap/sell.rs
+@@ -462,9 +462,10 @@
+ 
+ 
+     require!(ata.key() == expected_ata, PumpAmmError::InvalidCashbackAccumulatorAta);
++    #[inline(always)]
+ 
+-
+-    require!(ata.is_writable, PumpAmmError::InvalidCashbackAccumulatorAta);
++    fn cold_467() -> Result<()> { Err(error!(PumpAmmError::InvalidCashbackAccumulatorAta)) }
++    if !ata.is_writable { return cold_467(); }
+     if ata.data_is_empty() {
+         anchor_spl::associated_token::create(CpiContext::new(
+             associated_token_program.to_account_info(),
+@@ -490,7 +491,6 @@
+ 
+ 
+ 
+-
+ 
+ 
+ 

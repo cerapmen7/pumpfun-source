@@ -62,6 +62,18 @@ assert inv["size"] == 13224 and inv["skeleton_equal"] == 1629 and inv["regions"]
 for v in variants[1:]:
     assert (P / "artifacts" / ("measure-" + v["variant"] + ".json")).is_file()
 
+attrs = load("variants-attributes.json")
+assert [v["variant"] for v in attrs] == ["a1", "a2", "a3", "a4", "e1", "e2", "e3"]
+by = {v["variant"]: v for v in attrs}
+assert by["a1"]["matched"] == 1014 and len(by["a1"]["matched_lost"]) == 5
+assert by["a2"]["matched"] == 1013 and len(by["a2"]["matched_lost"]) == 6
+assert by["a3"]["matched"] == 1014
+for k in ("a4", "e1", "e2", "e3"):
+    assert by[k]["matched"] == 1019 and by[k]["raw"] == 183, k
+assert by["e2"]["candidate_sha256"] == "297ef41e784ca5db96e6813345e7f6342b554efd46ccab47be4b26f63cbe47d9"
+assert by["e1"]["delta"] == 40 and by["e3"]["delta"] == 72
+assert by["a4"]["skeleton_equal"] == 1581 and by["a4"]["regions"] == 23
+
 print("verify_packet: OK")
 print("  published 1019/1035 matched, 188 raw; 16 unmatched = targets")
 print("  linux01/02 1019/1035 matched (same set), 183 raw; byte-identical builds")
